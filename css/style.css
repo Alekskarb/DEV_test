@@ -1,110 +1,114 @@
-* {
-	box-sizing: border-box;
-	margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+.main {
+	display: flex;
+	justify-content: center;
+	background-color:darkslategray;
+	scroll-behavior: smooth;
 }
 
-main {
-	width: 100%;
-	height: 900px;
-	padding-top: 50px;
-    /*background: url('../img/food-bg.jpg') center center no-repeat;*/
-    background-size: cover;
+.app {
+	justify-content: center;
+	/*flex-direction: column;*/
+	width: 1440px;
+	height: 5335px;
+	background-image: url('../img/part1.jpg');
+	/*background-size: cover;*/
+	box-shadow: 0 0 15px 1px black;
+	/*z-index: -1;*/
 }
-.open {
-	display: block;
-	margin: 0 auto;
-	width: 250px;
-	height: 50px;
-	margin-bottom: 30px;
-    background-color: #fff;
-    border-radius: 4px;
-	font-size: 22px;
+.app_greeting {
+	width: 100%;
+	height: 805px;
+	/*background-color: #eff0f2;*/
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	/*position: absolute;*/
+
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.app_greeting_text {
+	flex-wrap: wrap;
+	font-family: Montserrat, sans-serif;
+	font-size: 45px;
+	letter-spacing: 1.5pt;
 	text-align: center;
-	line-height: 50px;
-    cursor: pointer;
-    transition: 0.3s all;
+	display: flex;
+	justify-content: center;
+	text-shadow: 5px 5px 10px  gray;
+	position: relative;
+	top:-8%;
+
+}
+
+.greeting__logo {
+	position: relative;
+	left: -35.7%;
+	top:-32.3%;
 }
 .open:hover {
     transform: scale(1.05);
 }
-.shop {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	width: 90%;
-	min-height: 560px;
-	margin: 0 auto;
-	padding: 60px 30px;
-    background-color: rgba(0,0,0,.7);
-    border-radius: 8px;
-}
-.product {
-	width: 23%;
-	min-height: 200px;
-	margin-right: 1%;
-    background-color: #fff;
-    border-radius: 8px;
-    margin-bottom: 30px;
-    box-shadow: 0 0 30px rgba(256,256,256, .4);
-}
-.product .product-card {
-	display: block;
-	width: 90%;
-	height: 180px;
-	margin: 0 auto;
-	margin-top: 5%;
-}
-.product .product-card img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-button {
-	display: block;
-	width: 120px;
-	height: 30px;
-	margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #000;
-    border-radius: 4px;
-	cursor: pointer;
-}
-.cart {
-	display: none;
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	background-color: rgba(0,0,0,.9)
-}
-h2 {
-	color: #fff;
-	font-size: 30px;
-	text-align: center;
-	margin-top: 30px;
-}
-.cart .cart-field {
-	width: 80%;
-	height: 600px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	margin: 0 auto;
-	margin-top: 30px;
-	border: 1px solid white;
-}
-.close {
-	width: 200px;
-	height: 50px;
-	background-color: #fff;
-	font-size: 26px;
-	margin-top: 10px;
-}
+/*.shop {*/
+/*	display: flex;*/
+/*	justify-content: center;*/
+/*	align-items: center;*/
+/*	flex-wrap: wrap;*/
+/*	width: 90%;*/
+/*	min-height: 560px;*/
+/*	margin: 0 auto;*/
+/*	padding: 60px 30px;*/
+/*    background-color: rgba(0,0,0,.7);*/
+/*    border-radius: 8px;*/
+/*}*/
+/*.product {*/
+/*	width: 23%;*/
+/*	min-height: 200px;*/
+/*	margin-right: 1%;*/
+/*    background-color: #fff;*/
+/*    border-radius: 8px;*/
+/*    margin-bottom: 30px;*/
+/*    box-shadow: 0 0 30px rgba(256,256,256, .4);*/
+/*}*/
+
+/*.product .product-card img {*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    object-fit: cover;*/
+/*}*/
+/*button {*/
+/*	display: block;*/
+/*	width: 120px;*/
+/*	height: 30px;*/
+/*	margin: 0 auto;*/
+/*    margin-top: 10px;*/
+/*    margin-bottom: 10px;*/
+/*    border: 1px solid #000;*/
+/*    border-radius: 4px;*/
+/*	cursor: pointer;*/
+/*}*/
+/*.cart {*/
+/*	display: none;*/
+/*	width: 100%;*/
+/*	height: 100%;*/
+/*	position: absolute;*/
+/*	top: 0;*/
+/*	background-color: rgba(0,0,0,.9)*/
+/*}*/
+
+/*.cart .cart-field {*/
+/*	width: 80%;*/
+/*	height: 600px;*/
+/*	display: flex;*/
+/*	justify-content: center;*/
+/*	align-items: center;*/
+/*	flex-wrap: wrap;*/
+/*	margin: 0 auto;*/
+/*	margin-top: 30px;*/
+/*	border: 1px solid white;*/
+/*}*/
 
 
 
