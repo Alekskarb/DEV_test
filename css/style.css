@@ -7,13 +7,11 @@
 
 .app {
 	justify-content: center;
-	/*flex-direction: column;*/
 	width: 1440px;
 	height: 5335px;
 	background-image: url('../img/part1.jpg');
-	/*background-size: cover;*/
+	/*background-color: white;*/
 	box-shadow: 0 0 15px 1px black;
-	/*z-index: -1;*/
 }
 .app_greeting {
 	width: 100%;
