@@ -26,7 +26,9 @@
 	flex-wrap: wrap;
 	align-items: center;
 }
+.greeting__back {
 
+}
 .greeting__text {
 	flex-wrap: wrap;
 	font-family: Montserrat, sans-serif;
@@ -37,7 +39,8 @@
 	justify-content: center;
 	text-shadow: 5px 5px 10px  gray;
 	position: relative;
-	top:-8%;
+	top:22.3%;
+	left: 0.3%
 }
 .greeting__contact {
 	/*flex-wrap: wrap;*/
@@ -51,14 +54,14 @@
 	font-weight: bold;
 	/*justify-content: center;*/
 	/*text-shadow: 5px 5px 10px  gray;*/
-	/*position: relative;*/
+	position: relative;
 	/*top:-8%;*/
 }
 
 .greeting__logo {
 	position: relative;
-	left: -35.7%;
-	top:-32.3%;
+	left: -35.6%;
+	top: -1.9%;
 }
 .open:hover {
     transform: scale(1.05);
