@@ -8,31 +8,27 @@ html, body {
 }
 .wrapper {
 	display: flex;
-	justify-content: center;
+	flex-flow: column wrap;
+	justify-content: flex-start;
 	align-items: center;
-	background-color:darkslategray;
+	background-color: darkslategray;
+	box-shadow: 0 0 15px 1px black;
+
 	scroll-behavior: smooth;
 }
 
-.wrapper__header {
-	background-color:white;
-	box-shadow: 0 0 15px 1px black;
+header {
+	background-color: #eff0f2;
+	height: 810px;
+	width: 1440px;
+	/*background-image: url('../img/part1.jpg');*/
+	/*background-color: white;*/
 }
 main {
-	/*display: flex;*/
-	/*justify-content: space-around;*/
-	/*align-items: center;*/
 	background-color:white;
 	width: 1440px;
 	height: 4910px;
 	text-align: center;
-}
-header {
-	background-color: #eff0f2;
-	height: 110px;
-	width: 1440px;
-	/*background-image: url('../img/part1.jpg');*/
-	/*background-color: white;*/
 }
 footer {
 	background-color: black;
@@ -45,45 +41,56 @@ footer {
 	width: 114px;
 }
 
-.greeting {
-	padding: 0 150px 0 150px;
+.header__greeting {
+	/*padding: 0 150px 0 150px;*/
 	height: 695px;
 	background-color: #eff0f2;
 	font-size: 24px;
-	/*flex-wrap: wrap;*/
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	/*display: flex;*/
+	/*justify-content: center;*/
+	/*align-items: center;*/
 }
 .greeting__text {
-	flex-wrap: wrap;
+	/*flex-flow: column wrap;*/
 	height: 695px;
 	font-family: Montserrat, sans-serif;
 	font-size: 45px;
 	font-weight: bold;
 	letter-spacing: 1pt;
-	display: flex;
-	justify-content: center;
-	align-content: center;
+	/*display: flex;*/
+	/*justify-content: center;*/
+	/*align-content: center;*/
 	color: rgb(80,80,80);
 	text-shadow: 5px 5px 10px  gray;
 
-	position: relative;
+	/*position: relative;*/
 	top: 10%;
 }
-.greeting__back {
-	background: aqua 255px 54px/50% 50% no-repeat;
-	/*box-shadow: 5px 5px 0 cyan;*/
+.greeting__text-back {
+	/* Style for "Rectangle" */
+	width: 255px;
+	height: 54px;
+	background-color: #76f4ea;
+	opacity: 1;
 	padding:  0 5px 0 5px;
 }
-.greeting__contact {
-	font-family: Raleway, serif;
+.greeting__text-contact {
 	font-size: 18px;
-	letter-spacing: 2pt;
-	border: darkslategrey solid 2px;
-	padding: 15px 45px 15px 45px;
-	font-weight: bold;
-	margin-top: 140px;
+	border: #000000 solid 2px;
+	width: 232px;
+	height: 53px;
+	border-radius: 2px;
+	/*padding-top: 20px;*/
+	margin-top: 230px;
+	/*justify-content: center;*/
+	/*width: 136px;*/
+	/*height: 13px;*/
+	opacity: 0.75;
+	color: #000000;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	/*line-height: 28px;*/
+	letter-spacing: 2px;
 }
 .greeting__cup {
 padding-left: 80%;
@@ -99,13 +106,15 @@ padding-left: 80%;
 }
 .works__header-title {
 	font-family: Raleway, serif;
-	font-weight: 900;
 }
 .works__block img {
-	margin-left: 140px;
-	width: 511px;
+	margin-left: 250px;
+	width: 392px;
 	box-shadow: 0 0 10px 5px darkgrey;
 	/*flex-grow: initial;*/
+}
+.works__block{
+	display: flex;
 }
 .open:hover {
     transform: scale(1.05);
