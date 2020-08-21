@@ -38,34 +38,30 @@ footer {
 	padding-right: 1030px;
 	width: 114px;
 }
-.header__cup {
-	/*padding-left: 80%;*/
-	/*padding-bottom:	20%;*/
-	width: 125px;
+.greeting__cup {
+	margin-top: -40px;
+	padding-left: 917px;
+	width: 121px;
 }
 
 .header__greeting {
-	/*padding: 0 150px 0 150px;*/
-	/*height: 695px;*/
 	background-color: #eff0f2;
-	font-size: 24px;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
 }
 .greeting__text {
-	/*height: 695px;*/
+	padding-top: 203px;
+	text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
 	font-family: Montserrat, sans-serif;
 	font-size: 45px;
-	font-weight: bold;
-	letter-spacing: 1pt;
+	font-weight: 700;
+	line-height: 28px;
 	color: rgb(80,80,80);
-	text-shadow: 5px 5px 10px  gray;
-	padding-top: 190px;
+	letter-spacing: 2px;
 }
 .greeting__text-back {
-	/* Style for "Rectangle" */
 	width: 255px;
 	height: 54px;
 	background-color: #76f4ea;
@@ -75,35 +71,71 @@ footer {
 .greeting__text-contact {
 	font-size: 18px;
 	border: #000000 solid 2px;
-	width: 136px;
-	height: 13px;
 	border-radius: 2px;
-	padding: 20px 48px 20px 48px;
-	margin-top: 230px;
+	padding: 12px 40px 12px 40px;
+	margin-top: 155px;
+	width: 150px;
 	opacity: 0.75;
 	color: #000000;
 	font-family: Montserrat, sans-serif;
 	font-weight: 400;
 	line-height: 28px;
 	letter-spacing: 2px;
+	margin-left: 403px;
 }
 .works {
-	background-color: #f8f8f8
+	height: 985px;
+	background-color: #f8fafa;
 }
 .works__header {
-	padding: 100px;
+	padding: 125px;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
 }
 .works__header-title {
-	font-family: Raleway, serif;
+	/*width: 219px;*/
+	/*height: 28px;*/
+	opacity: 0.9;
+	color: #000000;
+	font-family: Montserrat, serif;
+	font-size: 38px;
+	font-weight: 900;
+	line-height: 28px;
+	letter-spacing: 2.28px;
+}
+.works__header-subtitle {
+	/*width: 617px;*/
+	padding: 10px;
+	opacity: 0.62;
+	color: #000000;
+	font-family: Merriweather, sans-serif;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 28px;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
 }
 .works__block img {
-	margin-left: 250px;
+	margin-left: 232px;
 	width: 392px;
 	box-shadow: 0 0 10px 5px darkgrey;
-	/*flex-grow: initial;*/
 }
 .works__block{
 	display: flex;
+	/* Style for "We Actuall" */
+	/*width: 406px;*/
+	/*height: 17px;*/
+	opacity: 0.75;
+	color: #000000;
+	font-family: Merriweather, serif;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 28px;
+	text-transform: uppercase;
+	/* Text style for "We Actuall" */
+	letter-spacing: 1.2px;
 }
 .open:hover {
     transform: scale(1.05);
