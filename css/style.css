@@ -5,7 +5,6 @@ html, body {
 *{
 	margin: 0;
 	padding: 0;
-	text-align: center;
 }
 .wrapper {
 	display: flex;
@@ -15,12 +14,14 @@ html, body {
 	background-color: darkslategray;
 	box-shadow: 0 0 15px 1px black;
 	scroll-behavior: smooth;
+
 }
 
 header {
 	background-color: #eff0f2;
 	height: 810px;
 	width: 1440px;
+	text-align: center;
 }
 main {
 	background-color:white;
@@ -83,20 +84,20 @@ footer {
 	letter-spacing: 2px;
 	margin-left: 403px;
 }
-.works {
+.about {
 	height: 985px;
 	background-color: #f8fafa;
 }
-.works__header {
+.about__header {
 	padding: 125px;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
 }
-.works__header-title {
+.about__header-title {
 	/*width: 219px;*/
-	/*height: 28px;*/
+	text-transform: uppercase;
 	opacity: 0.9;
 	color: #000000;
 	font-family: Montserrat, serif;
@@ -105,7 +106,7 @@ footer {
 	line-height: 28px;
 	letter-spacing: 2.28px;
 }
-.works__header-subtitle {
+.about__header-subtitle {
 	/*width: 617px;*/
 	padding: 10px;
 	opacity: 0.62;
@@ -117,25 +118,54 @@ footer {
 	text-transform: uppercase;
 	letter-spacing: 1.2px;
 }
-.works__block img {
+.about__block img {
 	margin-left: 232px;
 	width: 392px;
 	box-shadow: 0 0 10px 5px darkgrey;
+	padding-top: 5px;
 }
-.works__block{
+.about__block{
 	display: flex;
-	/* Style for "We Actuall" */
-	/*width: 406px;*/
-	/*height: 17px;*/
+}
+.block__texts{
+	opacity: 0.75;
+	color: #000000;
+	font-family: Merriweather, serif;
+	padding-left: 155px;
+	text-align: justify;
+	padding-top: 7px;
+}
+.block__title{
 	opacity: 0.75;
 	color: #000000;
 	font-family: Merriweather, serif;
 	font-size: 20px;
 	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1.3px;
+}
+.block__title2 {
+	opacity: 0.75;
+	color: #000000;
+	font-family: Merriweather, serif;
+	font-size: 17px;
+	font-weight: 700;
 	line-height: 28px;
 	text-transform: uppercase;
-	/* Text style for "We Actuall" */
-	letter-spacing: 1.2px;
+	letter-spacing: 1.02px;
+	padding-top: 7px;
+}
+.block__txt{
+	width: 474px;
+	/*height: 212px;*/
+	opacity: 0.74;
+	color: #000000;
+	font-family: Raleway, serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 0.7px;
+	padding-top: 20px;
 }
 .open:hover {
     transform: scale(1.05);
