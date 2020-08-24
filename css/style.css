@@ -181,23 +181,25 @@ footer {
 	align-items: center;
 	padding-top: 100px;
  }
-.team_comment-block {
+.team_comment-img {
 	display: flex;
-	flex-flow: column wrap;
 	justify-content: center;
 	align-items: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50%;
 	width: 370px;
-	padding: 7px;
-	background-image: url("./img/team/22_team.jpg");
+	height: 440px;
+	margin: 7px;
+	background-image: url("../img/team/22_team.jpg");
  }
-.team_comment {
-	/*position: relative;*/
+.team_comment-block {
 	width: 335px;
 	height: 241px;
 	box-shadow: 3px 6px 16px rgba(20, 20, 21, 0.18);
 	background-color: #6df6eb;
 	opacity: 0.98;
-
+	margin-top: 165px;
  }
 
 
