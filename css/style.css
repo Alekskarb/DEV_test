@@ -26,7 +26,7 @@ header {
 main {
 	background-color:white;
 	width: 1440px;
-	height: 4910px;
+	/*height: 4910px;*/
 }
 footer {
 	background-color: black;
@@ -168,9 +168,9 @@ footer {
 	padding-top: 20px;
 }
 .works {
-	height: 1165px;
+	height: 1135px;
 }
-.works img {
+.works_container img {
 	width: 370px;
 	padding: 7px;
 }
@@ -179,8 +179,28 @@ footer {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	padding-top: -22px;
+	padding-top: 100px;
  }
+.team_comment-block {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	width: 370px;
+	padding: 7px;
+	background-image: url("./img/team/22_team.jpg");
+ }
+.team_comment {
+	/*position: relative;*/
+	width: 335px;
+	height: 241px;
+	box-shadow: 3px 6px 16px rgba(20, 20, 21, 0.18);
+	background-color: #6df6eb;
+	opacity: 0.98;
+
+ }
+
+
 
 /*.open:hover {*/
 /*    transform: scale(1.05);*/
