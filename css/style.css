@@ -39,7 +39,7 @@ footer {
 	height: 315px;
 	display: flex;
 	flex-flow: column wrap;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 	opacity: 0.8;
 	color: #ffffff;
@@ -200,6 +200,7 @@ footer {
  }
 .team {
 	height: 1390px;
+	background-color: #f9fbfb;
 }
 .team_comment-img {
 	display: flex;
