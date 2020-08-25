@@ -199,7 +199,7 @@ footer {
 	padding-top: 100px;
  }
 .team {
-	height: 1380px;
+	height: 1390px;
 }
 .team_comment-img {
 	display: flex;
@@ -284,9 +284,16 @@ footer {
 	color: #ffffff;
 }
 .contacts {
-	height: 710px;
+	/*margin-top: 20px;*/
+	height: 700px;
 	background-color: #ffffff;
 	background-image: url("../img/snow_forest.jpg");
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: flex-end;
+	/*color: #faf4f4;*/
+	/*opacity: 0.4;*/
 
 }
 /*.open:hover {*/
