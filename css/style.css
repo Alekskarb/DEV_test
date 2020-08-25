@@ -193,6 +193,13 @@ footer {
 	margin: 7px;
 	background-image: url("../img/team/22_team.jpg");
  }
+.team_comment-contacts {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	padding: 0 15px 0 15px;
+ }
 .team_comment-block {
 	width: 335px;
 	height: 241px;
@@ -201,6 +208,26 @@ footer {
 	opacity: 0.98;
 	margin-top: 165px;
  }
+.team_comment-title {
+	/*width: 243px;*/
+	/*height: 19px;*/
+	opacity: 0.95;
+	line-height: 24px;
+	color: #000000;
+	font-family: Merriweather, serif;
+	font-size: 19px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	padding: 38px 40px 17px 40px;
+ }
+.team_comment-title span {
+	font-family: Merriweather, serif;
+	font-weight: 400;
+	letter-spacing: 0.45px;
+	font-size: 15px;
+	line-height: 24px;
+	font-style: italic;
+}
 
 
 
