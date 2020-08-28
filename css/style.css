@@ -25,17 +25,16 @@ i {
 header {
 	background-color: #eff0f2;
 	height: 810px;
-	width: 1440px;
+	width: 94.5%;
 	text-align: center;
 }
 main {
 	background-color:white;
-	width: 1440px;
-	/*height: 4910px;*/
+	width: 94.5%;
 }
 footer {
 	background-color: black;
-	width: 1440px;
+	width: 94.5%;
 	height: 315px;
 	display: flex;
 	flex-flow: column wrap;
@@ -90,9 +89,8 @@ header button {
 	font-size: 18px;
 	border: #000000 solid 2px;
 	border-radius: 2px;
-	padding: 12px 40px 12px 40px;
+	padding: 10px 40px;
 	margin-top: 155px;
-	width: 150px;
 	opacity: 0.75;
 	color: #000000;
 	font-family: Montserrat, sans-serif;
@@ -113,8 +111,6 @@ header button {
 	align-items: center;
 }
 .about__header__title {
-	/*width: 219px;*/
-	text-transform: uppercase;
 	opacity: 0.9;
 	color: #000000;
 	font-family: Montserrat, serif;
@@ -124,7 +120,6 @@ header button {
 	letter-spacing: 2.28px;
 }
 .about__header__subtitle {
-	/*width: 617px;*/
 	padding: 10px;
 	opacity: 0.62;
 	color: #000000;
@@ -266,7 +261,6 @@ header button {
 	align-items: center;
 	color: #faf4f4;
 	opacity: 0.4;
-
 }
 .footer-contacts i {
 	background: #8a8a8a;
@@ -280,12 +274,9 @@ header button {
 	opacity: 0.95;
 }
 .footer-contacts i:before {
-	/*width: 33px;*/
-	/*height: 33px;*/
 	color: #ffffff;
 }
 .contacts {
-	/*margin-top: 20px;*/
 	height: 700px;
 	background-color: #ffffff;
 	background-image: url("../img/snow_forest.jpg");
@@ -293,9 +284,6 @@ header button {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: flex-end;
-	/*color: #faf4f4;*/
-	/*opacity: 0.4;*/
-
 }
 /*.open:hover {*/
 /*    transform: scale(1.05);*/
