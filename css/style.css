@@ -49,6 +49,7 @@ footer {
 	font-weight: 400;
 	line-height: 25px;
 	letter-spacing: 0.16px;
+	text-align: center;
 }
 .header__logo {
 	padding-top: 64px;
@@ -56,7 +57,7 @@ footer {
 	width: 114px;
 }
 .header__greeting__cup {
-	margin-top: -40px;
+	margin-top: -38px;
 	padding-left: 917px;
 	width: 121px;
 }
@@ -70,9 +71,9 @@ footer {
 	font-family: Montserrat, sans-serif;
 	font-size: 45px;
 	font-weight: 700;
-	line-height: 50px;
+	line-height: 57px;
 	color: rgb(80,80,80);
-	letter-spacing: 2px;
+	letter-spacing: 1.9px;
 	background-color: #eff0f2;
 }
 .header__greeting__color {
@@ -85,15 +86,14 @@ header button {
 	font-size: 18px;
 	border: #000000 solid 2px;
 	border-radius: 2px;
-	padding: 10px 40px;
-	margin-top: 155px;
+	padding: 10px 42px;
+	margin-top: 140px;
 	opacity: 0.75;
 	color: #000000;
 	font-family: Montserrat, sans-serif;
 	font-weight: 400;
 	line-height: 28px;
 	letter-spacing: 2px;
-	/*margin-right: 600px;*/
 }
 .about {
 	height: 23.3%;
@@ -266,8 +266,23 @@ header button {
 	font-weight: 400;
 	line-height: 25px;
 	letter-spacing: 0.16px;
-}
 
+}
+.contacts__block1 {
+	width: 614px;
+	height: 460px;
+	box-shadow: 0 0 30px rgba(21, 21, 21, 0.12);
+	background-color: #021623;
+	opacity: 0.71;
+	margin: 0 12px 122px 0;
+}
+.contacts__block2 {
+	width: 500px;
+	height: 461px;
+	box-shadow: 0 0 3px rgba(21, 21, 21, 0.16);
+	background-color: #021623;
+	opacity: 0.71;
+	margin: 0 0 122px 12px;
 }
 .footer-contacts {
 	display: flex;
@@ -277,10 +292,10 @@ header button {
 	color: #faf4f4;
 	opacity: 0.4;
 	margin: 11px;
-
+	text-align: center;
 }
 footer span {
-	margin: -47px 0 0 0;
+	margin: -50px 0 0;
 }
 .footer-contacts i {
 	background: #8a8a8a;
@@ -288,14 +303,18 @@ footer span {
 	height: 34px;
 	padding: 3px;
 	margin: 3px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	opacity: 0.95;
 }
 .footer-contacts i:before {
 	color: #ffffff;
 	font-size: 20px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	margin-top: 7px;
+
 }
 
 /*.open:hover {*/
