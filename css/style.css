@@ -95,19 +95,6 @@ header button {
 	line-height: 28px;
 	letter-spacing: 2px;
 }
-.contacts button {
-	font-size: 18px;
-	border: #000000 solid 2px;
-	border-radius: 2px;
-	padding: 14px 30px;
-	margin-top: 340px;
-	opacity: 0.75;
-	background-color: #6eeee4;
-	font-family: Montserrat, sans-serif;
-	font-weight: 400;
-	line-height: 28px;
-	letter-spacing: 2px;
-}
 .about {
 	height: 23.3%;
 	background-color: #f8fafa;
@@ -279,7 +266,19 @@ header button {
 	font-weight: 400;
 	line-height: 25px;
 	letter-spacing: 0.16px;
-
+}
+.contacts button {
+	font-size: 18px;
+	border: #000000 solid 2px;
+	border-radius: 2px;
+	padding: 12px 35px;
+	opacity: 0.75;
+	background-color: #6eeee4;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	line-height: 28px;
+	letter-spacing: 2px;
+	margin: 0 0 10px 30px;
 }
 .contacts__block1 {
 	width: 614px;
@@ -290,8 +289,11 @@ header button {
 	margin: 0 12px 122px 0;
 	display: flex;
 	flex-flow: column wrap;
-	justify-content: flex-start;
-	align-items: center;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.contacts__block1 div {
+	padding: 0 0 0 30px;
 }
 .contacts__block2 {
 	width: 500px;
@@ -333,13 +335,6 @@ footer span {
 	margin-top: 7px;
 
 }
-
 /*.open:hover {*/
 /*    transform: scale(1.05);*/
 /*}*/
-
-
-
-
-
-
