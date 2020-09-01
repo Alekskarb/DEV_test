@@ -189,6 +189,13 @@ header button {
 	align-items: center;
 	padding-top: 100px;
  }
+a:hover, button:hover {
+	/*position: absolute;*/
+	transform: scale(1.05, 1.05);
+	transition: 1s;
+	color: cornflowerblue;
+	background: cornflowerblue;
+}
 .team {
 	height: 1385px;
 	background-color: #f9fbfb;
@@ -355,8 +362,4 @@ footer span {
 	align-content: center;
 	text-align: center;
 	margin-top: 7px;
-
 }
-/*.open:hover {*/
-/*    transform: scale(1.05);*/
-/*}*/
