@@ -31,13 +31,13 @@ header {
 }
 main {
 	background-color:white;
-	height: 4210px;
+	min-height: 4210px;
 	width: 93vw;
 }
 footer {
 	background-color: black;
 	width: 93vw;
-	height: 315px;
+	min-height: 315px;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: center;
@@ -180,7 +180,7 @@ header button {
 	padding-top: 20px;
 }
 .works {
-	height: 27.8%;
+	min-height: 1170px;
 }
 .works_container img {
 	width: 370px;
@@ -191,7 +191,7 @@ header button {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	padding-top: 100px;
+	padding: 100px 0 100px 0;
  }
 a:hover, button:hover {
 	transform: scale(1.05, 1.05);
@@ -200,9 +200,9 @@ a:hover, button:hover {
 	/*background: cornflowerblue;*/
 }
 .team {
-	height: 1385px;
+	min-height: 1385px;
 	background-color: #f9fbfb;
-	margin-top: -33px;
+	/*margin-top: -33px;*/
 }
 .team_comment-img {
 	display: flex;
@@ -263,7 +263,7 @@ a:hover, button:hover {
 }
 .contacts {
 	/*height: 730px;*/
-	height: 16.8%;
+	min-height: 16.8%;
 	background: url("../img/snow_forest.jpg") no-repeat;
 	display: flex;
 	flex-flow: row wrap;
