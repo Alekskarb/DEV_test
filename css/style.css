@@ -260,7 +260,8 @@ i:hover, button:hover {
 	padding: 0 40px 25px 40px;
 }
 .contacts {
-	height: 16.9%;
+	height: 17%;
+	width: 97%;
 	background: url("../img/snow_forest.jpg") no-repeat 50% bottom;
 	display: flex;
 	flex-flow: row wrap;
@@ -272,7 +273,7 @@ i:hover, button:hover {
 	font-weight: 400;
 	line-height: 25px;
 	letter-spacing: 0.16px;
-	padding: 117px 25px 0 15px;
+	padding: 115px 25px 0 15px;
 }
 .contacts button {
 	font-size: 18px;
@@ -288,12 +289,13 @@ i:hover, button:hover {
 	margin: 3px 0 40px 30px;
 }
 .contacts__block1 {
-	width: 615px;
+	width: 44.2%;
+	min-width: 300px;
 	height: 460px;
 	box-shadow: 0 0 30px rgba(21, 21, 21, 0.12);
 	background-color: #021623;
 	opacity: 0.71;
-	margin: 8px 0 122px 10px;
+	margin: 8px 16px 122px 16px;
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: space-between;
@@ -313,15 +315,19 @@ i:hover, button:hover {
 input:last-child {
 	padding: 15px 0 85px 0;
 }
-
 .contacts__block2 {
-	width: 500px;
+	width: 36%;
+	min-width: 300px;
 	height: 460px;
 	box-shadow: 0 0 3px rgba(21, 21, 21, 0.16);
 	background-color: #021623;
 	opacity: 0.71;
-	margin: 8px 0 122px 30px;
+	margin: 8px 10px 122px 10px;
 	text-align: justify;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: flex-start;
+	align-items: center;
 }
 .contacts__block2__txt {
 	opacity: 0.7;
@@ -333,9 +339,12 @@ input:last-child {
 	padding: 30px 213px 0 30px;
 }
 .contacts__block2__map {
-	width: 455px;
+	min-height: 146px;
+	width: 460px;
+	min-width: 300px;
 	height: 224px;
-	margin: 20px;
+	margin: 22px 20px 22px -10px;
+	opacity: 1;
 }
 .footer-contacts {
 	display: flex;
