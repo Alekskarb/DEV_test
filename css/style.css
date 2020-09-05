@@ -5,6 +5,7 @@ html, body {
 *{
 	margin: 0;
 	padding: 0;
+	text-decoration: none;
 }
 .wrapper {
 	display: flex;
@@ -14,7 +15,7 @@ html, body {
 	background-color: darkslategray;
 	box-shadow: 0 0 15px 1px black;
 	scroll-behavior: smooth;
-	text-align: center;
+	/*text-align: center;*/
 }
 i {
 	max-height: 40px;
@@ -193,16 +194,15 @@ header button {
 	align-items: center;
 	padding: 100px 0 100px 0;
  }
-a:hover, button:hover {
+i:hover, button:hover {
 	transform: scale(1.05, 1.05);
 	transition: 1s;
-	color: cornflowerblue;
-	/*background: cornflowerblue;*/
+	color: #ffffff;
+	background: #6df6eb;
 }
 .team {
 	min-height: 1385px;
 	background-color: #f9fbfb;
-	/*margin-top: -33px;*/
 }
 .team_comment-img {
 	display: flex;
@@ -228,7 +228,6 @@ a:hover, button:hover {
 	height: 241px;
 	box-shadow: 3px 6px 16px rgba(20, 20, 21, 0.18);
 	background-color: #6df6eb;
-	opacity: 0.98;
 	margin-top: 165px;
  }
 .team_comment-title {
@@ -252,7 +251,6 @@ a:hover, button:hover {
 .team_comment-text {
 	width: 239px;
 	height: 64px;
-	opacity: 0.8;
 	color: #000000;
 	font-family: Raleway, serif;
 	font-size: 16px;
@@ -262,14 +260,12 @@ a:hover, button:hover {
 	padding: 0 40px 25px 40px;
 }
 .contacts {
-	/*height: 730px;*/
 	min-height: 16.8%;
-	background: url("../img/snow_forest.jpg") no-repeat;
+	background: url("../img/snow_forest.jpg") no-repeat 50% 50%;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: flex-end;
-	opacity: 0.8;
 	color: #ffffff;
 	font-family: Raleway, serif;
 	font-size: 16px;
@@ -282,7 +278,7 @@ a:hover, button:hover {
 	border: #000000 solid 2px;
 	border-radius: 2px;
 	padding: 12px 35px;
-	opacity: 0.75;
+	/*opacity: 0.75;*/
 	background-color: #6eeee4;
 	font-family: Montserrat, sans-serif;
 	font-weight: 400;
@@ -344,7 +340,6 @@ input:last-child {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	color: #faf4f4;
 	opacity: 0.4;
 	margin: 11px;
 	text-align: center;
@@ -357,16 +352,15 @@ footer span {
 	width: 40px;
 	height: 34px;
 	padding: 3px;
-	margin: 3px;
-	opacity: 0.95;
-}
-.footer-contacts i:before {
-	color: #ffffff;
+	margin: 7px 3px 3px 3px;
 	font-size: 20px;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
 	align-content: center;
 	text-align: center;
-	margin-top: 7px;
+}
+.footer-contacts i:hover {
+	background: #4cf2ff;
+	color: #ffffff;
 }
