@@ -3,6 +3,12 @@
 $fz:100px;
 $colorWhite:#ffffff;
 $colorBlack:#000000;
+%alignColumnCenter {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-content: center;
+}
 
 html, body {
 	font-size: 16px;
@@ -56,10 +62,7 @@ footer {
 	background-color: $colorBlack;
 	width: 93vw;
 	min-height: 315px;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	align-items: center;
+	@extend %alignColumnCenter;
 	opacity: 0.8;
 	color: $colorWhite;
 	font-family: Raleway, serif;
@@ -77,10 +80,7 @@ footer {
 	max-width: 8%;
 }
 .header__greeting {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	align-items: center;
+	@extend %alignColumnCenter;
 	padding-top: 13.3%;
 	text-shadow: 4px 8px 10px $colorBlack;
 	font-family: Montserrat, sans-serif;
@@ -232,7 +232,7 @@ i:hover, button:hover {
 .team_comment-block {
 	width: 335px;
 	height: 241px;
-	box-shadow: 3px 6px 16px rgba(20, 20, 21, 0.18);
+	box-shadow: 3px 6px 16px #2D141415;
 	background-color: #6df6eb;
 	margin-top: 165px;
 	text-align: justify;
@@ -240,7 +240,7 @@ i:hover, button:hover {
 .team_comment-title {
 	opacity: 0.95;
 	line-height: 24px;
-	color: #000000;
+	color: $colorBlack;
 	font-family: Merriweather, serif;
 	font-size: 19px;
 	font-weight: 700;
@@ -258,7 +258,7 @@ i:hover, button:hover {
 .team_comment-text {
 	width: 239px;
 	height: 64px;
-	color: #000000;
+	color: $colorBlack;
 	font-family: Raleway, serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -274,7 +274,7 @@ i:hover, button:hover {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
-	color: #ffffff;
+	color: $colorWhite;
 	font-family: Raleway, serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -283,7 +283,7 @@ i:hover, button:hover {
 	padding: 115px 25px 0 15px;
 	button {
 		font-size: 18px;
-		border: #000000 solid 2px;
+		border: $colorBlack solid 2px;
 		border-radius: 2px;
 		padding: 10px 35px;
 		background-color: #6eeee4;
@@ -298,7 +298,7 @@ i:hover, button:hover {
 	width: 44.2%;
 	min-width: 300px;
 	height: 460px;
-	box-shadow: 0 0 30px rgba(21, 21, 21, 0.12);
+	box-shadow: 0 0 30px #1E151515;
 	background-color: #021623;
 	opacity: 0.71;
 	margin: 8px 16px 122px 16px;
@@ -337,7 +337,7 @@ i:hover, button:hover {
 }
 .contacts__block2__txt {
 	opacity: 0.7;
-	color: #ffffff;
+	color: $colorWhite;
 	font-family: Raleway, serif;
 	font-size: 15px;
 	font-weight: 400;
@@ -374,9 +374,11 @@ i:hover, button:hover {
 	align-content: center;
 	:hover {
 		background: #4cf2ff;
-		color: #ffffff;
+		color: $colorWhite;
 	}
 }
+
+
 // Шаблон №1
 //.tplborder{
 //	font-size: 100px;
