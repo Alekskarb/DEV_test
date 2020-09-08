@@ -130,7 +130,7 @@ footer {
 }
 .about__block {
 	display: flex;
-	flex-wrap: wrap;
+	flex-flow: row wrap;
 	padding: 140px 0 165px 0;
 	& img {
 		margin: 0 10.5% 0 16%;
@@ -163,7 +163,7 @@ footer {
 	letter-spacing: 1.02px;
 	padding-top: 11px;
 }
-.block__txt{
+.about__block__texts__txt{
 	width: 474px;
 	opacity: 0.74;
 	color: $colorBlack;
@@ -319,7 +319,6 @@ i:hover, button:hover {
 	width: 36%;
 	min-width: 300px;
 	height: 460px;
-	box-shadow: 0 0 3px rgba(21, 21, 21, 0.16);
 	background-color: #021623;
 	opacity: 0.71;
 	margin: 8px 10px 122px 10px;
@@ -336,10 +335,12 @@ i:hover, button:hover {
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 24px;
+	max-width: 500px;
 	padding: 30px 213px 0 30px;
 }
 .contacts__block2__map {
 	min-height: 146px;
+	//width: 80%;
 	//width: 460px;
 	min-width: 250px;
 	max-height: 224px;
