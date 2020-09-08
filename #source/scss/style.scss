@@ -326,7 +326,8 @@ i:hover, button:hover {
 	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: flex-start;
+	//margin: 30px 25px 0 25px;
 }
 .contacts__block2__txt {
 	opacity: 0.7;
@@ -336,14 +337,17 @@ i:hover, button:hover {
 	font-weight: 400;
 	line-height: 24px;
 	max-width: 500px;
-	padding: 30px 213px 0 30px;
+	margin: 33px 0 0 0;
+	p {
+		padding: 0 0 0 30px;
+	}
 }
-.contacts__block2__map {
-	min-height: 146px;
-	//width: 80%;
-	//width: 460px;
-	min-width: 250px;
-	max-height: 224px;
+#map {
+	//min-height: 146px;
+	width: 80%;
+	//max-width: 80%;
+	//min-width: 250px;
+	height: 63%;
 	margin: 22px 20px 22px -10px;
 }
 .footer-contacts {

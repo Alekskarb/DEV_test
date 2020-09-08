@@ -346,7 +346,7 @@ i:hover, button:hover {
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .contacts__block2__txt {
@@ -357,13 +357,15 @@ i:hover, button:hover {
   font-weight: 400;
   line-height: 24px;
   max-width: 500px;
-  padding: 30px 213px 0 30px;
+  margin: 33px 0 0 0;
+}
+.contacts__block2__txt p {
+  padding: 0 0 0 30px;
 }
 
-.contacts__block2__map {
-  min-height: 146px;
-  min-width: 250px;
-  max-height: 224px;
+#map {
+  width: 80%;
+  height: 63%;
   margin: 22px 20px 22px -10px;
 }
 
