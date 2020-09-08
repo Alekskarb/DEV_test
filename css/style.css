@@ -1,4 +1,4 @@
-.header__greeting, footer {
+.about__header, .header__greeting, footer, .wrapper {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
@@ -16,10 +16,6 @@ html, body {
 }
 
 .wrapper {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
   background-color: darkslategray;
   box-shadow: 0 0 15px 1px black;
   scroll-behavior: smooth;
@@ -88,7 +84,8 @@ footer span {
   font-size: 45px;
   font-weight: 700;
   line-height: 57px;
-  color: #505050;
+  color: #000000;
+  opacity: 0.7;
   letter-spacing: 1.9px;
   background-color: #eff0f2;
 }
@@ -113,10 +110,6 @@ footer span {
 
 .about__header {
   padding: 120px 0 0 0;
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .about__header__title {
@@ -149,8 +142,7 @@ footer span {
 .about__block img {
   margin: 0 10.5% 0 16%;
   width: 392px;
-  max-width: 392px;
-  min-height: 300px;
+  min-width: 222px;
   box-shadow: 0 0 10px 5px #a9a9a9;
 }
 
@@ -161,7 +153,7 @@ footer span {
   text-align: justify;
 }
 
-.block__title {
+.about__block__texts__title {
   opacity: 0.75;
   color: #000000;
   font-family: Merriweather, serif;
@@ -170,7 +162,7 @@ footer span {
   letter-spacing: 1.3px;
 }
 
-.block__title2 {
+.about__block__texts__title2 {
   opacity: 0.75;
   color: #000000;
   font-family: Merriweather, serif;
@@ -370,11 +362,9 @@ i:hover, button:hover {
 
 .contacts__block2__map {
   min-height: 146px;
-  width: 460px;
-  min-width: 300px;
-  height: 224px;
+  min-width: 250px;
+  max-height: 224px;
   margin: 22px 20px 22px -10px;
-  opacity: 1;
 }
 
 .footer-contacts {

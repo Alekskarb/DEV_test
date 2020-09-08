@@ -19,10 +19,7 @@ html, body {
 	text-decoration: none;
 }
 .wrapper {
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	align-items: center;
+	@extend %alignColumnCenter;
 	background-color: darkslategray;
 	box-shadow: 0 0 15px 1px black;
 	scroll-behavior: smooth;
@@ -31,7 +28,7 @@ html, body {
 i {
 	max-height: 40px;
 	opacity: 0.7;
-	color: #000000;
+	color: $colorBlack;
 	font-size: 13px;
 	padding-right: 9px;
 }
@@ -87,7 +84,8 @@ footer {
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 57px;
-	color: #505050;
+	color: $colorBlack;
+	opacity: 0.7;
 	letter-spacing: 1.9px;
 	background-color: #eff0f2;
 }
@@ -108,10 +106,7 @@ footer {
 }
 .about__header {
 	padding: 120px 0 0 0;
-	display: flex;
-	flex-flow: column wrap;
-	justify-content: center;
-	align-items: center;
+	@extend %alignColumnCenter;
 }
 .about__header__title {
 	opacity: 0.9;
@@ -137,11 +132,10 @@ footer {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 140px 0 165px 0;
-	img {
+	& img {
 		margin: 0 10.5% 0 16%;
 		width: 392px;
-		max-width: 392px;
-		min-height: 300px;
+		min-width: 222px;
 		box-shadow: 0 0 10px 5px #a9a9a9;
 	}
 }
@@ -151,7 +145,7 @@ footer {
 	font-family: Merriweather, serif;
 	text-align: justify;
 }
-.block__title{
+.about__block__texts__title {
 	opacity: 0.75;
 	color: $colorBlack;
 	font-family: Merriweather, serif;
@@ -159,7 +153,7 @@ footer {
 	font-weight: 700;
 	letter-spacing: 1.3px;
 }
-.block__title2 {
+.about__block__texts__title2 {
 	opacity: 0.75;
 	color: $colorBlack;
 	font-family: Merriweather, serif;
@@ -172,7 +166,7 @@ footer {
 .block__txt{
 	width: 474px;
 	opacity: 0.74;
-	color: #000000;
+	color: $colorBlack;
 	font-family: Raleway, serif;
 	font-size: 16px;
 	font-weight: 400;
@@ -201,7 +195,7 @@ footer {
 i:hover, button:hover {
 	transform: scale(1.05, 1.05);
 	transition: 1s;
-	color: #ffffff;
+	color: $colorWhite;
 	background: #6df6eb;
 }
 .team {
@@ -346,11 +340,10 @@ i:hover, button:hover {
 }
 .contacts__block2__map {
 	min-height: 146px;
-	width: 460px;
-	min-width: 300px;
-	height: 224px;
+	//width: 460px;
+	min-width: 250px;
+	max-height: 224px;
 	margin: 22px 20px 22px -10px;
-	opacity: 1;
 }
 .footer-contacts {
 	display: flex;
@@ -377,28 +370,9 @@ i:hover, button:hover {
 		color: $colorWhite;
 	}
 }
-
-
-// Шаблон №1
-//.tplborder{
-//	font-size: 100px;
-//	border-bottom: 5px dashed red;
-//}
 //@mixin fontz($f,$c){
 //	font-size: $f;
 //	color: $c;
-//}
-//.block{
-//	width: 300px / 960px * 100%;
-//	background-color: #666;
-//	padding: 30px;
-//	line-height: 60px;
-//	.block__text{
-//		font-size: $fz;
-//		span{
-//			color: green;
-//		}
-//	}
 //}
 //.link{
 //	@include fontz(80px,green);
@@ -408,11 +382,6 @@ i:hover, button:hover {
 //	.block &{
 //		font-size: $fz;
 //	}
-//	&:hover{
-//		color: $color_2;
-//	}
-//	@extend .tplborder;
-//}
 //.link-2{
 //	@include fontz(50px,green);
 //	border-bottom: 5px dashed #000;
