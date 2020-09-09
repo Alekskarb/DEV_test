@@ -1,5 +1,4 @@
 // Файл обнуляющих стилей @import "nullstyle.scss";
-// Переменные для блока
 $fz:100px;
 $colorWhite:#ffffff;
 $colorBlack:#000000;
@@ -9,7 +8,6 @@ $colorBlack:#000000;
 	justify-content: center;
 	align-content: center;
 }
-
 html, body {
 	font-size: 16px;
 }
@@ -61,7 +59,7 @@ footer {
 .header__logo {
 	padding-top: 4.5%;
 	padding-right: 72%;
-	width: 8%;
+	max-width: 113px;
 }
 .header__greeting {
 	@extend %alignColumnCenter;
@@ -72,7 +70,7 @@ footer {
 	font-weight: 700;
 	line-height: 57px;
 	color: $colorBlack;
-	opacity: 0.7;
+	opacity: 0.6;
 	letter-spacing: 1.9px;
 	background-color: #eff0f2;
 	button {
@@ -134,9 +132,9 @@ footer {
 	flex-flow: row wrap;
 	align-content: flex-start;
 	justify-content: space-between;
-	padding: 120px 140px 140px 140px;
+	padding: 120px 9% 100px 9%;
 	& img {
-		margin: 25px 8% 20px 8%;
+		margin: 25px 8% 60px 8%;
 		width: 392px;
 		min-width: 222px;
 		box-shadow: 0 0 10px 5px #a9a9a9;
@@ -144,12 +142,13 @@ footer {
 }
 .about__block__texts {
 	@extend %alignColumnCenter;
-	margin: -30px 45px 20px 45px;
+	margin: -70px 4% 20px 4%;
 	opacity: 0.75;
 	color: $colorBlack;
 	font-family: Merriweather, serif;
 	text-align: justify;
 	max-width: 474px;
+	min-width: 274px;
 }
 .about__block__texts__title {
 	opacity: 0.75;
@@ -158,6 +157,8 @@ footer {
 	font-size: 20px;
 	font-weight: 700;
 	letter-spacing: 1.3px;
+	min-width: 274px;
+	//margin: 0 auto;
 }
 .about__block__texts__title2 {
 	opacity: 0.75;
@@ -168,9 +169,10 @@ footer {
 	line-height: 28px;
 	letter-spacing: 1.02px;
 	padding-top: 11px;
+	//margin: 0 auto;
 }
 .about__block__texts__txt{
-	width: 474px;
+	max-width: 474px;
 	opacity: 0.74;
 	color: $colorBlack;
 	font-family: Raleway, serif;
@@ -179,6 +181,8 @@ footer {
 	line-height: 28px;
 	letter-spacing: 0.7px;
 	padding-top: 20px;
+	min-width: 274px;
+	margin: 0 auto;
 }
 .works {
 	min-height: 1170px;
