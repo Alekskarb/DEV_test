@@ -35,19 +35,6 @@ header {
   min-height: 810px;
   width: 93vw;
 }
-header button {
-  font-size: 18px;
-  border: #000000 solid 2px;
-  border-radius: 2px;
-  padding: 10px 42px;
-  margin-top: 9.5%;
-  opacity: 0.75;
-  color: #000000;
-  font-family: Montserrat, sans-serif;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 2px;
-}
 
 main {
   background-color: #ffffff;
@@ -88,6 +75,20 @@ footer span {
   opacity: 0.7;
   letter-spacing: 1.9px;
   background-color: #eff0f2;
+}
+.header__greeting button {
+  font-size: 18px;
+  border: #000000 solid 2px;
+  border-radius: 2px;
+  padding: 10px 42px;
+  margin-top: 9.5%;
+  opacity: 0.75;
+  color: #000000;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2px;
+  width: 222px;
 }
 
 .header__greeting__cup {
