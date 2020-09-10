@@ -27,7 +27,7 @@ i {
   opacity: 0.7;
   color: #000000;
   font-size: 13px;
-  padding-right: 9px;
+  padding-right: 13px;
 }
 
 header {
@@ -91,10 +91,15 @@ footer span {
   max-width: 240px;
 }
 
+.header__greeting_phrase {
+  min-width: 300px;
+  margin: 0 auto;
+}
+
 .header__greeting__cup {
   margin-top: -3%;
   padding-left: 85%;
-  width: 11%;
+  max-width: 11%;
 }
 
 .header__greeting__color {
@@ -150,13 +155,14 @@ footer span {
 }
 
 .about__block__texts {
-  margin: -70px 4% 20px 4%;
+  margin: 0 5% 90px 5%;
   opacity: 0.75;
   color: #000000;
   font-family: Merriweather, serif;
   text-align: justify;
   max-width: 474px;
   min-width: 274px;
+  padding: 0 0 0 0;
 }
 
 .about__block__texts__title {
@@ -178,7 +184,6 @@ footer span {
   line-height: 28px;
   letter-spacing: 1.02px;
   padding-top: 11px;
-  margin: 0 auto;
 }
 
 .about__block__texts__txt {
@@ -192,7 +197,6 @@ footer span {
   letter-spacing: 0.7px;
   padding-top: 20px;
   min-width: 274px;
-  margin: 0 auto;
 }
 
 .works {
@@ -290,8 +294,6 @@ i:hover, button:hover {
 }
 
 .contacts {
-  /*height: 17%;*/
-  /*width: 97%;*/
   background: url("../img/snow_forest.jpg") no-repeat 50% bottom;
   display: flex;
   flex-flow: row wrap;
@@ -303,19 +305,19 @@ i:hover, button:hover {
   font-weight: 400;
   line-height: 25px;
   letter-spacing: 0.16px;
-  padding: 115px 25px 0 15px;
+  padding: 115px 15px 0 15px;
 }
 .contacts button {
   font-size: 18px;
   border: #000000 solid 2px;
   border-radius: 2px;
-  padding: 10px 35px;
+  padding: 12px 35px;
   background-color: #6eeee4;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 2px;
-  margin: 0 0 35px 35px;
+  margin: 0 0 33px 33px;
 }
 
 .contacts__block1 {
@@ -339,10 +341,9 @@ i:hover, button:hover {
   background: none;
   text-decoration: none;
   outline: none;
-  margin: 40px 0 0 5px;
-}
-.contacts__block1 input :last-child {
-  padding: 15px 0 85px 0;
+  padding: 0 0 10px 0;
+  margin: 50px 0 -35px 0;
+  color: #ffffff;
 }
 
 .contacts__block2 {
