@@ -2,6 +2,11 @@
 $fz:100px;
 $colorWhite:#ffffff;
 $colorBlack:#000000;
+$colorSea:#6df6eb;
+$font1: Raleway, serif;
+$font2: Montserrat, sans-serif;
+$font3: Merriweather, serif;
+
 %alignColumnCenter {
 	display: flex;
 	flex-flow: column wrap;
@@ -30,10 +35,8 @@ i {
 	font-size: 13px;
 	padding-right: 13px;
 }
-a:focus {
+a {
 	color: $colorWhite;
-	background: $colorWhite;
-	text-decoration-color: $colorWhite;
 }
 header {
 	background-color: #eff0f2;
@@ -52,7 +55,7 @@ footer {
 	@extend %alignColumnCenter;
 	opacity: 0.8;
 	color: $colorWhite;
-	font-family: Raleway, serif;
+	font-family: $font1;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 25px;
@@ -70,7 +73,7 @@ footer {
 	@extend %alignColumnCenter;
 	padding: 13.3% 11% 0 11%;
 	text-shadow: 4px 8px 10px $colorBlack;
-	font-family: Montserrat, sans-serif;
+	font-family: $font2;
 	font-size: 45px;
 	font-weight: 700;
 	line-height: 57px;
@@ -87,7 +90,7 @@ footer {
 		margin: 12.3% 39% 0 39% ;
 		color: $colorBlack;
 		opacity: 0.8;
-		font-family: Montserrat, sans-serif;
+		font-family: $font2;
 		font-weight: 400;
 		line-height: 28px;
 		letter-spacing: 2px;
@@ -106,7 +109,7 @@ footer {
 .header__greeting__color {
 	width: 255px;
 	height: 54px;
-	background-color: #76f4ea;
+	background-color: $colorSea;
 	padding:  0 5px 0 5px;
 }
 .about {
@@ -120,7 +123,7 @@ footer {
 .about__header__title {
 	opacity: 0.9;
 	color: $colorBlack;
-	font-family: Montserrat, serif;
+	font-family: $font2;
 	font-size: 38px;
 	line-height: 40px;
 	font-weight: 900;
@@ -129,7 +132,7 @@ footer {
 .about__header__subtitle {
 	opacity: 0.62;
 	color: $colorBlack;
-	font-family: Merriweather, sans-serif;
+	font-family: $font3;
 	font-size: 18px;
 	font-weight: 400;
 	line-height: 30px;
@@ -155,7 +158,7 @@ footer {
 	margin: 0 5% 90px 5%;
 	opacity: 0.75;
 	color: $colorBlack;
-	font-family: Merriweather, serif;
+	font-family: $font3;
 	text-align: justify;
 	max-width: 474px;
 	min-width: 274px;
@@ -164,7 +167,7 @@ footer {
 .about__block__texts__title {
 	opacity: 0.75;
 	color: $colorBlack;
-	font-family: Merriweather, serif;
+	font-family: $font3;
 	font-size: 20px;
 	font-weight: 700;
 	letter-spacing: 1.3px;
@@ -174,7 +177,7 @@ footer {
 .about__block__texts__title2 {
 	opacity: 0.75;
 	color: $colorBlack;
-	font-family: Merriweather, serif;
+	font-family: $font3;
 	font-size: 17px;
 	font-weight: 700;
 	line-height: 28px;
@@ -185,7 +188,7 @@ footer {
 	max-width: 474px;
 	opacity: 0.74;
 	color: $colorBlack;
-	font-family: Raleway, serif;
+	font-family: $font1;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 28px;
@@ -210,7 +213,7 @@ footer {
 		min-height: 357px;
 		padding: 7px;
 		&:hover {
-			transform: scale(1.05, 1.05);
+			transform: skew(-5deg);
 			transition: 1s;
 		}
 	}
@@ -219,7 +222,7 @@ i:hover, button:hover, a:hover {
 	transform: scale(1.05, 1.05);
 	transition: 1s;
 	color: $colorWhite;
-	background: #6df6eb;
+	background: $colorSea;
 }
 .team {
 	min-height: 1385px;
@@ -250,7 +253,7 @@ i:hover, button:hover, a:hover {
 	width: 335px;
 	height: 241px;
 	box-shadow: 3px 6px 16px #2D141415;
-	background-color: #6df6eb;
+	background-color: $colorSea;
 	margin-top: 165px;
 	text-align: justify;
 }
@@ -258,13 +261,13 @@ i:hover, button:hover, a:hover {
 	opacity: 0.95;
 	line-height: 24px;
 	color: $colorBlack;
-	font-family: Merriweather, serif;
+	font-family: $font3;
 	font-size: 19px;
 	font-weight: 700;
 	letter-spacing: 1.5px;
 	padding: 38px 40px 15px 40px;
 	span {
-		font-family: Merriweather, serif;
+		font-family: $font3;
 		font-weight: 400;
 		letter-spacing: 0.45px;
 		font-size: 15px;
@@ -276,7 +279,7 @@ i:hover, button:hover, a:hover {
 	width: 239px;
 	height: 64px;
 	color: $colorBlack;
-	font-family: Raleway, serif;
+	font-family: $font1;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
@@ -290,7 +293,7 @@ i:hover, button:hover, a:hover {
 	justify-content: center;
 	align-items: center;
 	color: $colorWhite;
-	font-family: Raleway, serif;
+	font-family: $font1;
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 25px;
@@ -301,8 +304,8 @@ i:hover, button:hover, a:hover {
 		border: $colorBlack solid 2px;
 		border-radius: 2px;
 		padding: 12px 35px;
-		background-color: #6eeee4;
-		font-family: Montserrat, sans-serif;
+		background-color: $colorSea;
+		font-family: $font2;
 		font-weight: 400;
 		line-height: 28px;
 		letter-spacing: 2px;
@@ -344,15 +347,15 @@ i:hover, button:hover, a:hover {
 	background-color: #021623;
 	margin: 8px 10px 122px 10px;
 	text-align: justify;
-	display: flex;
 	opacity: 0.7;
+	display: flex;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
 }
 .contacts__block2__txt {
 	color: $colorWhite;
-	font-family: Raleway, serif;
+	font-family: $font1;
 	font-size: 15px;
 	font-weight: 400;
 	line-height: 24px;
@@ -362,17 +365,19 @@ i:hover, button:hover, a:hover {
 		padding: 0 0 0 30px;
 	}
 }
-#map {
-	width: 80%;
-	height: 63%;
-	padding: 22px 20px 22px -10px;
-}
+//#map {
+//	width: 80%;
+//	height: 63%;
+//	padding: 22px 20px 22px -10px;
+//}
 iframe {
-	margin: 22px 20px 22px 50px;
+	margin: 20px 20px 20px 23px;
+	min-width: 133%;
+	min-height: 60%;
 	//max-width: 460px;
 	//max-height: 224px;
-	//width: 80%;
-	//height: 43%;
+	//min-width: 230px;
+	//min-height: 112px;
 	opacity: 1;
 }
 .footer-contacts {
@@ -396,8 +401,32 @@ iframe {
 	justify-content: center;
 	align-content: center;
 	&:hover {
-		background: #4cf2ff;
+		background: $colorSea;
 		color: $colorWhite;
+		margin: 0 auto;
+		opacity: 1;
+	}
+}
+@media screen and (min-width: 720px) {
+	.about__block {
+		display: flex;
+		flex-flow: column wrap;
+		align-content: center;
+		justify-content: flex-start;
+		padding: 120px 9% 100px 9%;
+	}
+}
+@media screen and (min-width: 1366px) {
+	iframe {
+		display: flex;
+		flex-flow: column wrap;
+		align-content: center;
+		justify-content: center;
+		//margin: 20px 9%;
+		max-width: 66%;
+		max-height: 30%;
+		//width: 300px;
+		//height: 150px;
 	}
 }
 //@mixin fontz($f,$c){

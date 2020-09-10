@@ -30,10 +30,8 @@ i {
   padding-right: 13px;
 }
 
-a:focus {
+a {
   color: #ffffff;
-  background: #ffffff;
-  text-decoration-color: #ffffff;
 }
 
 header {
@@ -111,7 +109,7 @@ footer span {
 .header__greeting__color {
   width: 255px;
   height: 54px;
-  background-color: #76f4ea;
+  background-color: #6df6eb;
   padding: 0 5px 0 5px;
 }
 
@@ -127,7 +125,7 @@ footer span {
 .about__header__title {
   opacity: 0.9;
   color: #000000;
-  font-family: Montserrat, serif;
+  font-family: Montserrat, sans-serif;
   font-size: 38px;
   line-height: 40px;
   font-weight: 900;
@@ -137,7 +135,7 @@ footer span {
 .about__header__subtitle {
   opacity: 0.62;
   color: #000000;
-  font-family: Merriweather, sans-serif;
+  font-family: Merriweather, serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
@@ -224,7 +222,7 @@ footer span {
   padding: 7px;
 }
 .works_container img:hover {
-  transform: scale(1.05, 1.05);
+  transform: skew(-5deg);
   transition: 1s;
 }
 
@@ -322,7 +320,7 @@ i:hover, button:hover, a:hover {
   border: #000000 solid 2px;
   border-radius: 2px;
   padding: 12px 35px;
-  background-color: #6eeee4;
+  background-color: #6df6eb;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   line-height: 28px;
@@ -366,8 +364,8 @@ i:hover, button:hover, a:hover {
   background-color: #021623;
   margin: 8px 10px 122px 10px;
   text-align: justify;
-  display: flex;
   opacity: 0.7;
+  display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: flex-start;
@@ -386,14 +384,10 @@ i:hover, button:hover, a:hover {
   padding: 0 0 0 30px;
 }
 
-#map {
-  width: 80%;
-  height: 63%;
-  padding: 22px 20px 22px -10px;
-}
-
 iframe {
-  margin: 22px 20px 22px 50px;
+  margin: 20px 20px 20px 23px;
+  min-width: 133%;
+  min-height: 60%;
   opacity: 1;
 }
 
@@ -420,8 +414,30 @@ iframe {
   align-content: center;
 }
 .footer-contacts i:hover {
-  background: #4cf2ff;
+  background: #6df6eb;
   color: #ffffff;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+@media screen and (min-width: 720px) {
+  .about__block {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 120px 9% 100px 9%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  iframe {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    max-width: 66%;
+    max-height: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
