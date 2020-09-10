@@ -30,6 +30,13 @@ i {
   padding-right: 13px;
 }
 
+a:focus {
+  color: #ffffff;
+  background: #ffffff;
+  -webkit-text-decoration-color: #ffffff;
+          text-decoration-color: #ffffff;
+}
+
 header {
   background-color: #eff0f2;
   min-height: 810px;
@@ -217,8 +224,12 @@ footer span {
   min-height: 357px;
   padding: 7px;
 }
+.works_container img:hover {
+  transform: scale(1.05, 1.05);
+  transition: 1s;
+}
 
-i:hover, button:hover {
+i:hover, button:hover, a:hover {
   transform: scale(1.05, 1.05);
   transition: 1s;
   color: #ffffff;
@@ -326,7 +337,7 @@ i:hover, button:hover {
   height: 460px;
   box-shadow: 0 0 30px #1E151515;
   background-color: #021623;
-  opacity: 0.71;
+  opacity: 0.7;
   margin: 8px 16px 122px 16px;
   display: flex;
   flex-flow: column wrap;
@@ -345,23 +356,25 @@ i:hover, button:hover {
   margin: 50px 0 -35px 0;
   color: #ffffff;
 }
+.contacts__block1 input:last-child {
+  margin: 50px 0 55px 0;
+}
 
 .contacts__block2 {
   width: 36%;
   min-width: 300px;
   height: 460px;
   background-color: #021623;
-  opacity: 0.71;
   margin: 8px 10px 122px 10px;
   text-align: justify;
   display: flex;
+  opacity: 0.7;
   flex-flow: column wrap;
   justify-content: flex-start;
   align-items: flex-start;
 }
 
 .contacts__block2__txt {
-  opacity: 0.7;
   color: #ffffff;
   font-family: Raleway, serif;
   font-size: 15px;
@@ -377,7 +390,12 @@ i:hover, button:hover {
 #map {
   width: 80%;
   height: 63%;
-  margin: 22px 20px 22px -10px;
+  padding: 22px 20px 22px -10px;
+}
+
+iframe {
+  margin: 22px 20px 22px 50px;
+  opacity: 1;
 }
 
 .footer-contacts {
@@ -402,7 +420,7 @@ i:hover, button:hover {
   justify-content: center;
   align-content: center;
 }
-.footer-contacts i :hover {
+.footer-contacts i:hover {
   background: #4cf2ff;
   color: #ffffff;
 }

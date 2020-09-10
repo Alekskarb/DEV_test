@@ -30,6 +30,11 @@ i {
 	font-size: 13px;
 	padding-right: 13px;
 }
+a:focus {
+	color: $colorWhite;
+	background: $colorWhite;
+	text-decoration-color: $colorWhite;
+}
 header {
 	background-color: #eff0f2;
 	min-height: 810px;
@@ -175,7 +180,6 @@ footer {
 	line-height: 28px;
 	letter-spacing: 1.02px;
 	padding-top: 11px;
-	//margin: 0 auto;
 }
 .about__block__texts__txt{
 	max-width: 474px;
@@ -188,7 +192,6 @@ footer {
 	letter-spacing: 0.7px;
 	padding-top: 20px;
 	min-width: 274px;
-	//margin: 0 auto;
 }
 .works {
 	min-height: 1170px;
@@ -206,9 +209,13 @@ footer {
 		min-width: 300px;
 		min-height: 357px;
 		padding: 7px;
+		&:hover {
+			transform: scale(1.05, 1.05);
+			transition: 1s;
+		}
 	}
 }
-i:hover, button:hover {
+i:hover, button:hover, a:hover {
 	transform: scale(1.05, 1.05);
 	transition: 1s;
 	color: $colorWhite;
@@ -308,7 +315,7 @@ i:hover, button:hover {
 	height: 460px;
 	box-shadow: 0 0 30px #1E151515;
 	background-color: #021623;
-	opacity: 0.71;
+	opacity: 0.7;
 	margin: 8px 16px 122px 16px;
 	display: flex;
 	flex-flow: column wrap;
@@ -325,26 +332,25 @@ i:hover, button:hover {
 		padding: 0 0 10px 0;
 		margin: 50px 0 -35px 0;
 		color: $colorWhite;
-
+		&:last-child {
+			margin: 50px 0 55px 0;
+		}
 	}
 }
-
 .contacts__block2 {
 	width: 36%;
 	min-width: 300px;
 	height: 460px;
 	background-color: #021623;
-	opacity: 0.71;
 	margin: 8px 10px 122px 10px;
 	text-align: justify;
 	display: flex;
+	opacity: 0.7;
 	flex-flow: column wrap;
 	justify-content: flex-start;
 	align-items: flex-start;
-	//margin: 30px 25px 0 25px;
 }
 .contacts__block2__txt {
-	opacity: 0.7;
 	color: $colorWhite;
 	font-family: Raleway, serif;
 	font-size: 15px;
@@ -357,12 +363,17 @@ i:hover, button:hover {
 	}
 }
 #map {
-	//min-height: 146px;
 	width: 80%;
-	//max-width: 80%;
-	//min-width: 250px;
 	height: 63%;
-	margin: 22px 20px 22px -10px;
+	padding: 22px 20px 22px -10px;
+}
+iframe {
+	margin: 22px 20px 22px 50px;
+	//max-width: 460px;
+	//max-height: 224px;
+	//width: 80%;
+	//height: 43%;
+	opacity: 1;
 }
 .footer-contacts {
 	display: flex;
@@ -384,7 +395,7 @@ i:hover, button:hover {
 	flex-flow: row wrap;
 	justify-content: center;
 	align-content: center;
-	:hover {
+	&:hover {
 		background: #4cf2ff;
 		color: $colorWhite;
 	}
