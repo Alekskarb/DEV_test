@@ -147,8 +147,8 @@ footer span {
 .about__block {
   display: flex;
   flex-flow: row wrap;
-  align-content: flex-start;
-  justify-content: space-between;
+  align-content: center;
+  justify-content: center;
   padding: 120px 9% 100px 9%;
 }
 .about__block img {
@@ -163,7 +163,6 @@ footer span {
   color: #000000;
   font-family: Merriweather, serif;
   text-align: justify;
-  max-width: 474px;
   min-width: 274px;
   padding: 0 0 0 0;
 }
@@ -220,16 +219,12 @@ footer span {
   min-height: 357px;
   padding: 7px;
 }
-.works_container img:hover {
-  transform: skew(-5deg);
-  transition: 1s;
-}
 
 i:hover, button:hover, a:hover {
   transform: scale(1.05, 1.05);
   transition: 1s;
-  color: #ffffff;
-  background: #6df6eb;
+  color: #000000;
+  opacity: 1;
 }
 
 .team {
@@ -414,7 +409,6 @@ iframe {
 }
 .footer-contacts i:hover {
   background: #6df6eb;
-  color: #ffffff;
   margin: 0 auto;
   opacity: 1;
 }
@@ -424,7 +418,7 @@ iframe {
     display: flex;
     flex-flow: column wrap;
     align-content: center;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 120px 9% 100px 9%;
   }
   .about__block img {
