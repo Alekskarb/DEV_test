@@ -92,7 +92,7 @@ footer span {
   font-weight: 400;
   line-height: 28px;
   letter-spacing: 2px;
-  max-width: 240px;
+  width: 240px;
 }
 
 .header__greeting_phrase {
@@ -382,7 +382,7 @@ i:hover, button:hover, a:hover {
 }
 
 iframe {
-  margin: 20px 20px 20px 23px;
+  margin: 20px auto;
   min-width: 90%;
   min-height: 45%;
   max-width: 460px;
