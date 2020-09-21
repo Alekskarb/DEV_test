@@ -210,7 +210,14 @@ footer {
 		min-width: 300px;
 		min-height: 357px;
 		padding: 7px;
+		cursor: pointer;
 	}
+}
+//.works_img {
+//	cursor: pointer;
+//}
+.works_container .show {
+	opacity: 0.5;
 }
 i:hover, button:hover, a:hover {
 	transform: scale(1.05, 1.05);

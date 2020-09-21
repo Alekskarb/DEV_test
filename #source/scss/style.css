@@ -218,6 +218,11 @@ footer span {
   min-width: 300px;
   min-height: 357px;
   padding: 7px;
+  cursor: pointer;
+}
+
+.works_container .show {
+  opacity: 0.5;
 }
 
 i:hover, button:hover, a:hover {
