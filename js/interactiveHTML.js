@@ -1,20 +1,26 @@
-let body = document.querySelector(".slider__body__content");
-let img = document.querySelectorAll("img");
+let slider = document.querySelector(".slider__body__content");
+let img = document.querySelectorAll(".image");
+let popup = document.querySelector(".slider");
 
 function clickImg() {
-    // let img = document.getElementById(`${id}`);
-    // img.forEach(item => item.classList.toggle("slider"));
     img.forEach((item) =>
         item.addEventListener('click', function (e) {
-            console.log(e.target);
-            let image = document.querySelector(".slider__body__content");
-            image.classList.add();
-                // slider.classList.add("slider__show");
-                // body.style.backgroundImage = `url('./img/works/ + ${id} + _featured_works.jpg')`;
+            slider.innerHTML = `<img alt=\"missing\" src=\"./img/works/${item.id}_featured_works.jpg\"/>`;
+            popup.classList.add("open");
+            console.log(item.id);
             }
         )
     )
 }
-
+function closeImg() {
+    img.forEach((item) =>
+        item.addEventListener('click', function (e) {
+                slider.innerHTML = `<img alt=\"missing\" src=\"./img/works/${item.id}_featured_works.jpg\"/>`;
+                popup.classList.add("slider__show");
+                console.log(item.id);
+            }
+        )
+    )
+}
 clickImg();
 
