@@ -453,8 +453,6 @@ iframe {
   left: 0;
   opacity: 0;
   visibility: hidden;
-  overflow-y: auto;
-  overflow-x: hidden;
   z-index: 5;
 }
 
