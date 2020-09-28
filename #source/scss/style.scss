@@ -452,6 +452,8 @@ iframe {
 	transition: all 0.8s ease 0s;
 }
 .slider__body__content {
+	display: flex;
+	flex-flow: column wrap;
 	background: #666262;
 	padding: 30px;
 	max-width: 800px;
@@ -466,3 +468,26 @@ iframe {
 	text-decoration: none;
 	cursor: pointer;
 }
+//.slider__arrow-left {
+//	position: absolute;
+//	left: 10px;
+//	top: 40%;
+//	//display: block;
+//	background: url("../img/slider_left.png") no-repeat;
+//}
+//
+//.slider__arrow-right {
+//	position: absolute;
+//	right: 10px;
+//	top: 40%;
+//	//display: block;
+//	background: url("../img/slider_right.png") no-repeat;
+//}
+//
+//.slider__arrow-left:hover {
+//	opacity: 1.0;
+//}
+//
+//.slider__arrow-right:hover {
+//	opacity: 1.0;
+//}
