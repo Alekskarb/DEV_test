@@ -8,10 +8,8 @@ let buttonsLeft = document.querySelector(".slider__arrow-left");
 function clickImg() {
     img.forEach((item) =>
         item.addEventListener('click', function (e) {
-                slider.innerHTML = `<button class="slider__arrow-left">left</button>
-                                    <img alt="missing" src='${item.src}'/>
-                                    <div class="slider__close"> X </div>
-                                    <button class="slider__arrow-right">right</button>`;
+
+                slider.innerHTML = `<img class="popup__image" alt="missing" src='${item.src}'/>`;
                 popup.classList.add("open");
             }
         )
@@ -19,10 +17,10 @@ function clickImg() {
 }
 
 function closeImg() {
-    popup.addEventListener('click', function (e) {
-        // if (close) {
+    close.addEventListener('click', function (e) {
+        if (close) {
             popup.classList.remove("open");
-        // }
+        }
             console.log(e.target);
             console.log(close);
         }
