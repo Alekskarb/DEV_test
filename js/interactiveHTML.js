@@ -4,38 +4,29 @@ let popup = document.querySelector(".slider");
 let close = document.querySelector(".slider__close");
 let buttonsRight = document.querySelector(".slider__arrow-right");
 let buttonsLeft = document.querySelector(".slider__arrow-left");
-let imageID ;
+let imageID;
 
-function clickImg() {
-    img.forEach((item) =>
-        item.addEventListener('click', function (e) {
-            slider.innerHTML = `<img class="popup__image" id='${item.id}' alt="${item.id}" src='${item.src}'/>`;
-            popup.classList.add("open");
-            // returnID(+item.id);
-            imageID = +item.id;
-            }
-        )
-    )
+function clickImg(e) {
+    slider.innerHTML = `<img class="popup__image" src='${e.target.src}'/>`;
+    popup.classList.add("open");
+    imageID = +e.target.id;
 }
-function returnID(id) {
-    return id;
-}
-// let imageID = returnID();
+
+img.forEach((item) => {
+    item.addEventListener('click', clickImg)
+});
 
 function closeImg() {
     close.addEventListener('click', function (e) {
-            popup.classList.remove("open");
+        popup.classList.remove("open");
         }
     )
 }
 
-function nextImg(id) {
-    buttonsRight.addEventListener('click', function (e) {
-        slider.innerHTML = `<img class="popup__image" alt="${id}" src='./img/works/${id++}_featured_works.jpg'/>`;
-        }
-    )
-}
-clickImg();
+buttonsRight.addEventListener('click', function (e) {
+    slider.innerHTML = `<img class="popup__image" alt="${imageID}" src='./img/works/${imageID++}_featured_works.jpg'/>`;
+    }
+)
+
 closeImg();
-nextImg(imageID);
 
