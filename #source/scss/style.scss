@@ -220,31 +220,12 @@ i:hover, button:hover, a:hover {
 	color: $colorBlack;
 	opacity: 1;
 }
-.team {
-	min-height: 1385px;
-	background-color: #f9fbfb;
-	margin-top: -35px;
-	margin-bottom: -4px;
-}
-//.team_comment-img {
-//	display: flex;
-//	justify-content: center;
-//	align-items: center;
-//	background-repeat: no-repeat;
-//	background-size: cover;
-//	background-position: 50%;
-//	width: 370px;
-//	height: 440px;
-//	margin: 7px;
-//	background-image: url("../img/team/22_team.jpg");
+//.team {
+//	min-height: 1385px;
+//	background-color: #f9fbfb;
+//	margin-top: -35px;
+//	margin-bottom: -4px;
 //}
-.team_comment-contacts {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: flex-start;
-	align-items: flex-end;
-	padding-left: 40px;
-}
 .team_comment-block {
 	width: 335px;
 	height: 241px;
@@ -282,6 +263,31 @@ i:hover, button:hover, a:hover {
 	letter-spacing: 0.2px;
 	padding: 0 40px 25px 40px;
 }
+//.team_comment-img {
+//	display: flex;
+//	justify-content: center;
+//	align-items: center;
+//	background-repeat: no-repeat;
+//	background-size: cover;
+//	background-position: 50%;
+//	width: 370px;
+//	height: 440px;
+//	margin: 7px;
+//	background-image: url("../img/team/22_team.jpg");
+//}
+.team_comment-contacts {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+	padding-left: 40px;
+}
+
+//.team__image {
+//		opacity: 0;
+//		visibility: hidden;
+//}
+
 .contacts {
 	background: url("../img/snow_forest.jpg") no-repeat 50% bottom;
 	display: flex;
@@ -478,6 +484,3 @@ iframe {
 	cursor: pointer;
 	box-shadow: 0 0 5px dimgrey;
 }
-//.slider__arrow-right:hover {
-//	opacity: 1.0;
-//}

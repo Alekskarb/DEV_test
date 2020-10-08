@@ -228,21 +228,6 @@ i:hover, button:hover, a:hover {
   opacity: 1;
 }
 
-.team {
-  min-height: 1385px;
-  background-color: #f9fbfb;
-  margin-top: -35px;
-  margin-bottom: -4px;
-}
-
-.team_comment-contacts {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: flex-end;
-  padding-left: 40px;
-}
-
 .team_comment-block {
   width: 335px;
   height: 241px;
@@ -281,6 +266,14 @@ i:hover, button:hover, a:hover {
   line-height: 24px;
   letter-spacing: 0.2px;
   padding: 0 40px 25px 40px;
+}
+
+.team_comment-contacts {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-left: 40px;
 }
 
 .contacts {
