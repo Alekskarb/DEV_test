@@ -1,7 +1,8 @@
 let slider = document.querySelector(".slider__body__content");
 let img = document.querySelectorAll(".image");
+let imgWork = document.querySelectorAll(".team__image");
 let popup = document.querySelector(".slider");
-let man = document.querySelectorAll(".team__image");
+let man = document.querySelectorAll(".team__block");
 let close = document.querySelector(".slider__close");
 let buttonsRight = document.querySelector(".slider__arrow-right");
 let buttonsLeft = document.querySelector(".slider__arrow-left");
@@ -41,7 +42,8 @@ buttonsLeft.addEventListener('click', function () {
 )
 
 function clickMan() {
-    man.innerHTML = `<div class="team_comment-block">
+    // for (let item of man) {
+        man.innerHTML = `<div class="team_comment-block">
         <div class="team_comment-title">AL RAYHAN <span> / UI Designer </span></div>
     <div class="team_comment-text">Lorem Ipsum is not simply is an action designer random text
     It has roots in a piece. </div> <br/>
@@ -52,5 +54,8 @@ function clickMan() {
         <i class="fa fa-envelope-o" aria-hidden="true"></i>
         </div>
         </div>`
-}
-man.forEach((person) => {person.addEventListener('click', clickMan)});
+    })})}
+
+clickMan();
+// }
+man.forEach((person) => {person.addEventListener('click', clickMan(person))});
