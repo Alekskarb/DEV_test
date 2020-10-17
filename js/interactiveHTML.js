@@ -43,12 +43,11 @@ buttonsLeft.addEventListener('click', function () {
     }
 )
 
-function clickMan() {
+function clickMan(e) {
     // for (let item of man) {
-    man.innerHTML = `<div class="team_comment-block">
-        <div class="team_comment-title">AL RAYHAN <span> / UI Designer </span></div>
-    <div class="team_comment-text">Lorem Ipsum is not simply is an action designer random text
-    It has roots in a piece. </div> <br/>
+    arrPeople[e.target.id].innerHTML = `<div class="team_comment-block">
+        <div class="team_comment-title">${arrPeople.name[i]} <span> ${arrPeople.job[i]} </span></div>
+    <div class="team_comment-text">${arrPeople.describe[i]}</div> <br/>
     <div class="team_comment-contacts">
         <i class="fa fa-facebook" aria-hidden="true"></i>
         <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -58,9 +57,15 @@ function clickMan() {
         </div>`
 }
 
-man.forEach((person) => {
-    person.addEventListener('click', clickMan(person))
-});
 clickMan();
-// }
-
+let arrPeople = [
+    {name: "alesia", job: "UI designer", describe: "beautiful girl"},
+    {name: "bob", job: "frontend", describe: "coolman"},
+    {name: "alex", job: "backend", describe: "coolman"},
+    {name: "ales", job: "developer", describe: "coolman"},
+    {name: "olga", job: "graphic designer", describe: "beautiful"},
+    {name: "alesia", job: "designer", describe: "beautiful girl"}
+]
+man.forEach((item) => {
+    item.addEventListener('click', clickMan)
+});
