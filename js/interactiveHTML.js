@@ -42,22 +42,6 @@ buttonsLeft.addEventListener('click', function () {
         slider.innerHTML = `<img class="popup__image" alt="popup_no_image" src='./img/works/${imageID}_featured_works.jpg'/>`;
     }
 )
-
-function clickMan(e) {
-    // for (let item of man) {
-    arrPeople[e.target.id].innerHTML = `<div class="team_comment-block">
-        <div class="team_comment-title">${arrPeople.name[i]} <span> ${arrPeople.job[i]} </span></div>
-    <div class="team_comment-text">${arrPeople.describe[i]}</div> <br/>
-    <div class="team_comment-contacts">
-        <i class="fa fa-facebook" aria-hidden="true"></i>
-        <i class="fa fa-twitter" aria-hidden="true"></i>
-        <i class="fa fa-dribbble" aria-hidden="true"></i>
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-        </div>
-        </div>`
-}
-
-clickMan();
 let arrPeople = [
     {name: "alesia", job: "UI designer", describe: "beautiful girl"},
     {name: "bob", job: "frontend", describe: "coolman"},
@@ -66,6 +50,21 @@ let arrPeople = [
     {name: "olga", job: "graphic designer", describe: "beautiful"},
     {name: "alesia", job: "designer", describe: "beautiful girl"}
 ]
+function clickMan(e) {
+    man[+e.target.id].innerHTML = `<div class="team_comment-block">
+        <div class="team_comment-title">${arrPeople[+e.target.id].name} <span> ${arrPeople[+e.target.id].job} </span></div>
+    <div class="team_comment-text">${arrPeople[+e.target.id].describe}</div> <br/>
+    <div class="team_comment-contacts">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-dribbble" aria-hidden="true"></i>
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </div>
+        </div>`
+    console.log(+e.target.id);
+}
 man.forEach((item) => {
-    item.addEventListener('click', clickMan)
+    item.addEventListener('click', clickMan);
+    // console.log(item);
 });
+
