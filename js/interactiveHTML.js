@@ -44,9 +44,9 @@ buttonsLeft.addEventListener('click', function () {
 )
 let arrPeople = [
     {name: "alesia", job: "UI designer", describe: "beautiful girl"},
-    {name: "bob", job: "frontend", describe: "coolman"},
+    {name: "bob", job: "frontend", describe: "blackman"},
     {name: "alex", job: "backend", describe: "coolman"},
-    {name: "ales", job: "developer", describe: "coolman"},
+    {name: "ales", job: "developer", describe: "beardman"},
     {name: "olga", job: "graphic designer", describe: "beautiful"},
     {name: "alesia", job: "designer", describe: "beautiful girl"}
 ]
@@ -61,7 +61,7 @@ function clickMan(e) {
         <i class="fa fa-envelope-o" aria-hidden="true"></i>
         </div>
         </div>`
-    console.log(+e.target.id);
+    console.log(e);
 }
 man.forEach((item) => {
     item.addEventListener('click', clickMan);
