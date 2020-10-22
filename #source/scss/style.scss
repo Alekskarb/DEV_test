@@ -199,7 +199,7 @@ footer {
 	margin-top: 7px;
 }
 
-.works_container {
+.works_container, .team_container {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -220,12 +220,6 @@ i:hover, button:hover, a:hover {
 	color: $colorBlack;
 	opacity: 1;
 }
-//.team {
-//	min-height: 1385px;
-//	background-color: #f9fbfb;
-//	margin-top: -35px;
-//	margin-bottom: -4px;
-//}
 .team_comment-block {
 	width: 335px;
 	height: 241px;

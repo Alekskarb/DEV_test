@@ -206,14 +206,14 @@ footer span {
   margin-top: 7px;
 }
 
-.works_container {
+.works_container, .team_container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   padding: 110px 0 100px 0;
 }
-.works_container img {
+.works_container img, .team_container img {
   width: 370px;
   min-width: 300px;
   min-height: 357px;
