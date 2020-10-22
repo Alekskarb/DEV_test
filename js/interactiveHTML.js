@@ -50,37 +50,21 @@ let arrPeople = [
     {name: "alesia", job: "designer", describe: "beautiful girl", src: "./img/team/26_team.jpg"}
 ]
 
-// function clickMan(e) {
-//     man[+e.target.id].innerHTML = `<img class="team__image" alt="miss_img" id="0" src="./img/team/21_team.jpg"/></div>
-//     <div class="team_comment-block">
-//        <div class="team_comment-title">${arrPeople[+e.target.id].name}
-//        <span> ${arrPeople[+e.target.id].job} </span>
-//        </div>
-//     <div class="team_comment-text">${arrPeople[+e.target.id].describe}
-//     </div>
-//     <div class="team_comment-contacts">
-//         <i class="fa fa-facebook" aria-hidden="true"></i>
-//         <i class="fa fa-twitter" aria-hidden="true"></i>
-//         <i class="fa fa-dribbble" aria-hidden="true"></i>
-//         <i class="fa fa-envelope-o" aria-hidden="true"></i>
-//         </div>
-//         </div>`
-//     console.log(e);
-// }
-
-let newMan = arrPeople.map((item) => {
-    man.innerHTML = `
-        <img class="team__image" alt="miss_img" src="${arrPeople[item].src}"/>
+let newPeople = ['','','','','',''].map((item, index) => {
+    item[index] = `
+        <img class="team__image" alt="miss_img" src="${arrPeople[index].src}"/>
         <div class="team_comment-block">
-        <div class="team_comment-title"> ${arrPeople[item].name} <span> ${arrPeople[item].job} </span></div>
-        <div class="team_comment-text">${arrPeople[item].describe}</div> <br/>
-            <div class="team_comment-contacts">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <i class="fa fa-dribbble" aria-hidden="true"></i>
-            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            <div class="team_comment-title"> ${arrPeople[index].name} 
+                <span> ${arrPeople[index].job} </span>
             </div>
-        </div>`
+            <div class="team_comment-text"> ${arrPeople[index].describe} </div> <br/>
+            <div class="team_comment-contacts">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+                <i class="fa fa-dribbble" aria-hidden="true"></i>
+                <i class="fa fa-envelope-o" aria-hidden="true"></i>
+            </div>    
+        </div>
+        `
 });
-man.append(newMan);
-
+console.log(newPeople);
