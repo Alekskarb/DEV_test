@@ -49,9 +49,9 @@ let arrPeople = [
     {name: "olga", job: "graphic designer", describe: "beautiful", src: "./img/team/25_team.jpg"},
     {name: "alesia", job: "designer", describe: "beautiful girl", src: "./img/team/26_team.jpg"}
 ]
-
-let newPeople = ['','','','','',''].map((item, index) => {
-    item[index] = `
+    // ['','','','','','']
+let newPeople = arrPeople.map((item, index) => {
+    return `
         <img class="team__image" alt="miss_img" src="${arrPeople[index].src}"/>
         <div class="team_comment-block">
             <div class="team_comment-title"> ${arrPeople[index].name} 
@@ -68,3 +68,4 @@ let newPeople = ['','','','','',''].map((item, index) => {
         `
 });
 console.log(newPeople);
+man.innerHTML = `${newPeople}`;
