@@ -1,4 +1,3 @@
-// Файл обнуляющих стилей @import "nullstyle.scss";
 $fz:100px;
 $colorWhite:#ffffff;
 $colorBlack:#000000;
@@ -158,7 +157,6 @@ footer {
 	color: $colorBlack;
 	font-family: $font3;
 	text-align: justify;
-	//max-width: 474px;
 	min-width: 274px;
 	padding: 0 0 0 0;
 }
@@ -220,6 +218,15 @@ i:hover, button:hover, a:hover {
 	color: $colorBlack;
 	opacity: 1;
 }
+.team__image {
+	width: 370px;
+	min-width: 300px;
+	min-height: 357px;
+	position: relative;
+	right: 0;
+	top: auto;
+	display: flex;
+}
 .team_comment-block {
 	width: 335px;
 	height: 241px;
@@ -228,6 +235,7 @@ i:hover, button:hover, a:hover {
 	margin-top: 165px;
 	text-align: justify;
 	opacity: 1;
+	position: absolute;
 }
 .team_comment-title {
 	opacity: 0.95;
@@ -258,18 +266,6 @@ i:hover, button:hover, a:hover {
 	letter-spacing: 0.2px;
 	padding: 0 40px 25px 40px;
 }
-//.team_comment-img {
-//	display: flex;
-//	justify-content: center;
-//	align-items: center;
-//	background-repeat: no-repeat;
-//	background-size: cover;
-//	background-position: 50%;
-//	width: 370px;
-//	height: 440px;
-//	margin: 7px;
-//	background-image: url("../img/team/22_team.jpg");
-//}
 .team_comment-contacts {
 	display: flex;
 	flex-flow: row wrap;
@@ -277,12 +273,6 @@ i:hover, button:hover, a:hover {
 	align-items: flex-end;
 	padding-left: 40px;
 }
-
-//.team__image {
-//		opacity: 0;
-//		visibility: hidden;
-//}
-
 .contacts {
 	background: url("../img/snow_forest.jpg") no-repeat 50% bottom;
 	display: flex;
@@ -431,8 +421,6 @@ iframe {
 	left: 0;
 	opacity: 0;
 	visibility: hidden;
-	//overflow-y: auto;
-	//overflow-x: hidden;
 	z-index: 1;
 }
 .slider.open{
@@ -450,7 +438,6 @@ iframe {
 .slider__body__content {
 	display: flex;
 	flex-flow: row wrap;
-	//background: #666262;
 	justify-content: space-between;
 	align-items: center;
 	padding: 30px;
@@ -464,8 +451,6 @@ iframe {
 	color: #ff0000;
 	font-size: 20px;
 	left: 470px;
-	//top: 200px;
-	//top: 350px;
 	bottom: 215px;
 	cursor: pointer;
 	z-index: 5;

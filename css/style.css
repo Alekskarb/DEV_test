@@ -228,6 +228,16 @@ i:hover, button:hover, a:hover {
   opacity: 1;
 }
 
+.team__image {
+  width: 370px;
+  min-width: 300px;
+  min-height: 357px;
+  position: relative;
+  right: 0;
+  top: auto;
+  display: flex;
+}
+
 .team_comment-block {
   width: 335px;
   height: 241px;
@@ -236,6 +246,7 @@ i:hover, button:hover, a:hover {
   margin-top: 165px;
   text-align: justify;
   opacity: 1;
+  position: absolute;
 }
 
 .team_comment-title {

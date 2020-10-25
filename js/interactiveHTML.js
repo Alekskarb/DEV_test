@@ -1,10 +1,11 @@
 let slider = document.querySelector(".slider__body__content");
 let img = document.querySelectorAll(".works_image");
 let popup = document.querySelector(".slider");
-let man = document.querySelector(".team_container");
-let close = document.querySelector(".slider__close");
+let body = document.querySelector(".slider__body");
 let buttonsRight = document.querySelector(".slider__arrow-right");
 let buttonsLeft = document.querySelector(".slider__arrow-left");
+let man = document.querySelector(".team_container");
+
 let imageID;
 
 function clickImg(e) {
@@ -18,7 +19,7 @@ img.forEach((item) => {
 });
 
 function closeImg() {
-    close.addEventListener('click', function (e) {
+    slider.addEventListener('click', function (e) {
             popup.classList.remove("open");
         }
     )
@@ -49,23 +50,25 @@ let arrPeople = [
     {name: "olga", job: "graphic designer", describe: "beautiful", src: "./img/team/25_team.jpg"},
     {name: "alesia", job: "designer", describe: "beautiful girl", src: "./img/team/26_team.jpg"}
 ]
-    // ['','','','','','']
+
 let newPeople = arrPeople.map((item, index) => {
     return `
-        <img class="team__image" alt="miss_img" src="${arrPeople[index].src}"/>
-        <div class="team_comment-block">
-            <div class="team_comment-title"> ${arrPeople[index].name} 
-                <span> ${arrPeople[index].job} </span>
-            </div>
-            <div class="team_comment-text"> ${arrPeople[index].describe} </div> <br/>
-            <div class="team_comment-contacts">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-dribbble" aria-hidden="true"></i>
-                <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            </div>    
+       <div class="team__image">
+       <img alt="miss_img" src=${arrPeople[index].src} />   
+            <div class="team_comment-block">
+                    <div class="team_comment-title"> ${arrPeople[index].name} 
+                        <span> ${arrPeople[index].job} </span>
+                    </div>
+                    <div class="team_comment-text"> ${arrPeople[index].describe} </div> 
+                    <div class="team_comment-contacts">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </div>
+            </div>     
         </div>
         `
 });
-console.log(newPeople);
+
 man.innerHTML = `${newPeople}`;
