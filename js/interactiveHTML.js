@@ -43,7 +43,7 @@ buttonsLeft.addEventListener('click', function () {
     }
 )
 let arrPeople = [
-    {name: "alesia", job: "UI designer", describe: "beautiful girl", src: "./img/team/21_team.jpg"},
+    {name: "alesia", job: "UI designer", describe: "beautiful girl", src: './img/team/21_team.jpg'},
     {name: "bob", job: "frontend", describe: "blackman", src: "./img/team/22_team.jpg"},
     {name: "alex", job: "backend", describe: "coolman", src: "./img/team/23_team.jpg"},
     {name: "ales", job: "developer", describe: "beardman", src: "./img/team/24_team.jpg"},
@@ -54,8 +54,8 @@ let arrPeople = [
 let newPeople = arrPeople.map((item, index) => {
     return `
        <div class="team__image">
-       <img alt="miss_img" src=${arrPeople[index].src} />   
-            <div class="team_comment-block">
+       <img alt="miss_img" src=${arrPeople[index].src} />
+                 <div class="team_comment-block">
                     <div class="team_comment-title"> ${arrPeople[index].name} 
                         <span> ${arrPeople[index].job} </span>
                     </div>
