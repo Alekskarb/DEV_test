@@ -1,10 +1,9 @@
 let slider = document.querySelector(".slider__body__content");
 let img = document.querySelectorAll(".works_image");
 let popup = document.querySelector(".slider");
-let body = document.querySelector(".slider__body");
 let buttonsRight = document.querySelector(".slider__arrow-right");
 let buttonsLeft = document.querySelector(".slider__arrow-left");
-let man = document.querySelector(".team_container");
+let teamContainer = document.querySelector(".team_container");
 
 let imageID;
 
@@ -54,21 +53,22 @@ let arrPeople = [
 let newPeople = arrPeople.map((item, index) => {
     return `
        <div class="team__image">
-       <img alt="miss_img" src=${arrPeople[index].src} />
-                 <div class="team_comment-block">
-                    <div class="team_comment-title"> ${arrPeople[index].name} 
-                        <span> ${arrPeople[index].job} </span>
-                    </div>
-                    <div class="team_comment-text"> ${arrPeople[index].describe} </div> 
-                    <div class="team_comment-contacts">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <i class="fa fa-dribbble" aria-hidden="true"></i>
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                    </div>
+            <img alt="miss_img" src=${arrPeople[index].src} />
+            <div class="team_comment-block">
+                <div class="team_comment-title"> ${arrPeople[index].name} 
+                    <span> ${arrPeople[index].job} </span>
+                </div>
+                <div class="team_comment-text"> ${arrPeople[index].describe} 
+                </div> 
+                <div class="team_comment-contacts">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-dribbble" aria-hidden="true"></i>
+                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                </div>           
             </div>     
-        </div>
+       </div>
         `
 });
 
-man.innerHTML = `${newPeople}`;
+teamContainer.innerHTML = `${newPeople}`;

@@ -226,6 +226,11 @@ i:hover, button:hover, a:hover {
 	right: 0;
 	top: auto;
 	display: flex;
+	&:hover {
+		.team_comment-block {
+		opacity: 0.5;
+		}
+	}
 }
 .team_comment-block {
 	width: 335px;
@@ -238,9 +243,6 @@ i:hover, button:hover, a:hover {
 	position: absolute;
 	bottom: 22px;
 	right: 18px;
-	&:hover {
-		opacity: 0.5;
-	}
 }
 .team_comment-title {
 	opacity: 0.95;
@@ -458,7 +460,6 @@ iframe {
 	left: 470px;
 	bottom: 215px;
 	cursor: pointer;
-	//z-index: 5;
 }
 .popup__image {
 	width: 444px;

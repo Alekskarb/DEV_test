@@ -237,6 +237,9 @@ i:hover, button:hover, a:hover {
   top: auto;
   display: flex;
 }
+.team__image:hover .team_comment-block {
+  opacity: 0.5;
+}
 
 .team_comment-block {
   width: 335px;
@@ -249,9 +252,6 @@ i:hover, button:hover, a:hover {
   position: absolute;
   bottom: 22px;
   right: 18px;
-}
-.team_comment-block:hover {
-  opacity: 0.5;
 }
 
 .team_comment-title {
