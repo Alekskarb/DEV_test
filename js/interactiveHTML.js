@@ -61,10 +61,18 @@ let newPeople = arrPeople.map((item, index) => {
                 <div class="team_comment-text"> ${arrPeople[index].describe} 
                 </div> 
                 <div class="team_comment-contacts">
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-dribbble" aria-hidden="true"></i>
-                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                     <a title="pinterest" href="https://pinterest.com/pin/create/button/?url=https://www.pinterest.com/&media=&description=">
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    </a>
+                    <a title="twitter" href="https://twitter.com/intent/tweet?url=&text=skarb">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                    <a title="facebook" href="https://www.facebook.com/sharer/sharer.php?u=">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                    <a title="google" href="mailto:alex.korbutovski@gmail.com">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                    </a>
                 </div>           
             </div>     
        </div>
