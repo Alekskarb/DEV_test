@@ -1,4 +1,5 @@
 let slider = document.querySelector(".slider__body__content");
+let body = document.querySelector(".slider__body");
 let img = document.querySelectorAll(".works_image");
 let popup = document.querySelector(".slider");
 let buttonsRight = document.querySelector(".slider__arrow-right");
@@ -17,15 +18,18 @@ img.forEach((item) => {
     item.addEventListener('click', clickImg)
 });
 
-function closeImg() {
-    slider.addEventListener('click', function (e) {
+function closeImg(e) {
+
+    body.addEventListener('click', function (e) {
             popup.classList.remove("open");
         }
+
     )
 }
 
 closeImg();
-buttonsRight.addEventListener('click', function () {
+buttonsRight.addEventListener('click', function (event) {
+    event.stopPropagation();
         imageID++;
         if (imageID === 17) {
             imageID = 11;
@@ -33,7 +37,8 @@ buttonsRight.addEventListener('click', function () {
         slider.innerHTML = `<img class="popup__image" alt="popup_no_image" src='./img/works/${imageID}_featured_works.jpg'/>`;
     }
 )
-buttonsLeft.addEventListener('click', function () {
+buttonsLeft.addEventListener('click', function (event) {
+    event.stopPropagation();
         imageID--;
         if (imageID === 10) {
             imageID = 16;

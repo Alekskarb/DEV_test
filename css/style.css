@@ -239,6 +239,8 @@ i:hover, button:hover, a:hover {
 }
 .team__image:hover .team_comment-block {
   opacity: 0.5;
+  animation-name: rotate;
+  animation-duration: 2s;
 }
 
 .team_comment-block {
@@ -254,6 +256,14 @@ i:hover, button:hover, a:hover {
   right: 18px;
 }
 
+@keyframes rotate {
+  0%, 33% {
+    transform: rotate(-15deg);
+  }
+  66% {
+    transform: rotate(360deg);
+  }
+}
 .team_comment-title {
   opacity: 0.95;
   line-height: 24px;
