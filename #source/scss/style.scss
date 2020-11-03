@@ -1,7 +1,7 @@
 $fz:100px;
 $colorWhite:#ffffff;
 $colorBlack:#000000;
-$colorSea:#6df6eb;
+$colorSea: #6df6eb;
 $font1: Raleway, serif;
 $font2: Montserrat, sans-serif;
 $font3: Merriweather, serif;
@@ -228,10 +228,13 @@ i:hover, button:hover, a:hover {
 	top: auto;
 	display: flex;
 	&:hover {
-		.team_comment-block {
+		svg {
 			opacity: 0.5;
 			animation-name: rotate;
 			animation-duration: 2s;
+			animation-delay: 250ms;
+			animation-iteration-count: 2;
+			animation-fill-mode: forwards;
 		}
 	}
 }
@@ -246,12 +249,27 @@ i:hover, button:hover, a:hover {
 	position: absolute;
 	bottom: 22px;
 	right: 18px;
+	border-radius: 15px;
 }
+svg {
+	width: 335px;
+	height: 240px;
+	box-shadow: 3px 6px 16px #2D141415;
+	background-color: $colorSea;
+	margin-top: 165px;
+	text-align: justify;
+	opacity: 0;
+	position: absolute;
+	bottom: 22px;
+	right: 18px;
+	border-radius: 15px;
+}
+
 @keyframes rotate {
-	0%, 33% {
-		transform: rotate(-15deg);
+	0% {
+		transform: rotate(0deg);
 	}
-	66% {
+	100% {
 		transform: rotate(360deg);
 	}
 }
