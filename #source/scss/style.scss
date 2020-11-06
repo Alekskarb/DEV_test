@@ -233,7 +233,7 @@ i:hover, button:hover, a:hover {
 			animation-name: rotate;
 			animation-duration: 2s;
 			animation-delay: 250ms;
-			animation-iteration-count: 2;
+			animation-iteration-count: 1;
 			animation-fill-mode: forwards;
 		}
 	}
@@ -241,7 +241,7 @@ i:hover, button:hover, a:hover {
 .team_comment-block {
 	width: 335px;
 	height: 241px;
-	box-shadow: 3px 6px 16px #2D141415;
+	box-shadow: 3px 3px 12px $colorBlack;
 	background-color: $colorSea;
 	margin-top: 165px;
 	text-align: justify;
@@ -251,18 +251,20 @@ i:hover, button:hover, a:hover {
 	right: 18px;
 	border-radius: 15px;
 }
-.team_comment-block:before {
-	width: 35px;
-	height: 20px;
-	box-shadow: 3px 6px 16px #2D141415;
-	background-color: $colorSea;
-	margin-top: 165px;
-	text-align: justify;
-	opacity: 0;
+.team_comment-block::before {
+	content: '';
+	//box-shadow: 3px 6px 16px $colorBlack;
+	width: 0;
+	height: 0;
 	position: absolute;
-	bottom: 22px;
-	right: 18px;
-	border-radius: 15px;
+	border-style: solid;
+	border-width: 0 20px 20px 20px;
+	border-color: transparent transparent $colorSea transparent;
+	//background-color: $colorSea;
+	top: -20px;
+	bottom: 241px;
+	right: 220px;
+	left: 35px;
 }
 
 @keyframes rotate {
