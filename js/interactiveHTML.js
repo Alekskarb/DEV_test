@@ -22,7 +22,7 @@ function closeImg(e) {
     window.addEventListener('click', function (e) {
         if (e.target === body) {
             popup.classList.remove("open");
-        }
+            }
         }
     )
 }
@@ -62,8 +62,6 @@ let newPeople = arrPeople.map((item, index) => {
     return `
        <div class="team__image">
             <img alt="miss_img" src=${arrPeople[index].src} />
-            <svg> 
-            <polygon points="40,20 60,0 80,20" fill="#9F6EB"/>
             <div class="team_comment-block">
                 <div class="team_comment-title"> ${arrPeople[index].name} 
                     <span> ${arrPeople[index].job} </span>
@@ -85,8 +83,6 @@ let newPeople = arrPeople.map((item, index) => {
                     </a>
                 </div>           
             </div>     
-            </svg>
-            
        </div>
         `
 });

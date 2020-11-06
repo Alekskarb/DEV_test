@@ -237,7 +237,7 @@ i:hover, button:hover, a:hover {
   top: auto;
   display: flex;
 }
-.team__image:hover svg {
+.team__image:hover .team_comment-block {
   opacity: 0.5;
   animation-name: rotate;
   animation-duration: 2s;
@@ -260,9 +260,9 @@ i:hover, button:hover, a:hover {
   border-radius: 15px;
 }
 
-svg {
-  width: 335px;
-  height: 240px;
+.team_comment-block:before {
+  width: 35px;
+  height: 20px;
   box-shadow: 3px 6px 16px #2D141415;
   background-color: #6df6eb;
   margin-top: 165px;
