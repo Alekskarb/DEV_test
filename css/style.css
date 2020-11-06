@@ -507,9 +507,11 @@ iframe {
   background: rgba(255, 255, 255, 0);
   border: none;
 }
-.slider__button:hover {
+.slider__button:hover, .slider__button:focus {
   background: rgba(255, 255, 255, 0);
   border: none;
+  cursor: pointer;
+  outline: none;
 }
 
 .popup__image {

@@ -19,26 +19,29 @@ img.forEach((item) => {
 });
 
 function closeImg(e) {
-
-    body.addEventListener('click', function (e) {
+    window.addEventListener('click', function (e) {
+        if (e.target === body) {
             popup.classList.remove("open");
         }
-
+        }
     )
 }
-
 closeImg();
-buttonsRight.addEventListener('click', function (event) {
-    event.stopPropagation();
-        imageID++;
-        if (imageID === 17) {
-            imageID = 11;
+
+function rewind () {
+    buttonsRight.addEventListener('click', function (event) {
+            imageID++;
+            if (imageID === 17) {
+                imageID = 11;
+            }
+            slider.innerHTML = `<img class="popup__image" alt="popup_no_image" src='./img/works/${imageID}_featured_works.jpg'/>`;
         }
-        slider.innerHTML = `<img class="popup__image" alt="popup_no_image" src='./img/works/${imageID}_featured_works.jpg'/>`;
-    }
-)
+    )
+}
+rewind();
+
 buttonsLeft.addEventListener('click', function (event) {
-    event.stopPropagation();
+    // event.stopPropagation();
         imageID--;
         if (imageID === 10) {
             imageID = 16;
