@@ -237,13 +237,22 @@ i:hover, button:hover, a:hover {
   top: auto;
   display: flex;
 }
-.team__image:hover .team_comment-block {
-  opacity: 0.5;
-  animation-name: rotate;
+.team__image:hover .team_comment-title, .team__image:hover .team_comment-text, .team__image:hover .team_comment-contacts {
+  animation-name: transportX;
   animation-duration: 2s;
-  animation-delay: 250ms;
+  animation-delay: 1s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  opacity: 0.5;
+  color: #000000;
+}
+.team__image:hover .team_comment-block {
+  animation-name: transportY;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 1;
+  color: #6df6eb;
 }
 
 .team_comment-block {
@@ -274,18 +283,29 @@ i:hover, button:hover, a:hover {
   left: 35px;
 }
 
-@keyframes rotate {
+@keyframes transportX {
   0% {
-    transform: rotate(0deg);
+    transform: translateX(200px);
+    opacity: 0;
   }
   100% {
-    transform: rotate(360deg);
+    transform: translateX(0px);
+    opacity: 0.5;
+  }
+}
+@keyframes transportY {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 0.5;
   }
 }
 .team_comment-title {
-  opacity: 0.95;
   line-height: 24px;
-  color: #000000;
+  color: #6df6eb;
   font-family: Merriweather, serif;
   font-size: 19px;
   font-weight: 700;
@@ -304,7 +324,7 @@ i:hover, button:hover, a:hover {
 .team_comment-text {
   width: 239px;
   height: 64px;
-  color: #000000;
+  color: #6df6eb;
   font-family: Raleway, serif;
   font-size: 16px;
   font-weight: 400;
