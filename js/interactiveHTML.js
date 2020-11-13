@@ -87,4 +87,4 @@ let newPeople = arrPeople.map((item, index) => {
         `
 });
 
-teamContainer.innerHTML = `${newPeople}`;
+teamContainer.innerHTML = newPeople.join('');

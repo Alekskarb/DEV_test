@@ -239,16 +239,16 @@ i:hover, button:hover, a:hover {
 }
 .team__image:hover .team_comment-title, .team__image:hover .team_comment-text, .team__image:hover .team_comment-contacts {
   animation-name: transportX;
-  animation-duration: 2s;
-  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-delay: 250ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  opacity: 0.5;
+  opacity: 0;
   color: #000000;
 }
 .team__image:hover .team_comment-block {
   animation-name: transportY;
-  animation-duration: 1s;
+  animation-duration: 777ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   opacity: 1;

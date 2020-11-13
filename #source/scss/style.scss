@@ -216,7 +216,6 @@ i:hover, button:hover, a:hover {
 	transition: 1s;
 	color: $colorBlack;
 	opacity: 1;
-	//box-shadow: 3px 3px 16px 2px $colorSea;
 }
 .team__image {
 	width: 370px;
@@ -229,17 +228,16 @@ i:hover, button:hover, a:hover {
 	&:hover {
 		.team_comment-title, .team_comment-text, .team_comment-contacts {
 			animation-name: transportX;
-			animation-duration: 2s;
-			animation-delay: 1s;
+			animation-duration: 1s;
+			animation-delay: 250ms;
 			animation-iteration-count: 1;
 			animation-fill-mode: forwards;
-			opacity: 0.5;
+			opacity: 0;
 			color: $colorBlack;
 		}
 		.team_comment-block {
 			animation-name: transportY;
-			animation-duration: 1s;
-			//animation-delay: 250ms;
+			animation-duration: 777ms;
 			animation-iteration-count: 1;
 			animation-fill-mode: forwards;
 			opacity: 1;
@@ -268,7 +266,6 @@ i:hover, button:hover, a:hover {
 	border-style: solid;
 	border-width: 0 20px 20px 20px;
 	border-color: transparent transparent $colorSea transparent;
-	//box-shadow: 0px -3px 6px 2px $colorBlack;
 	top: -20px;
 	bottom: 241px;
 	right: 220px;
